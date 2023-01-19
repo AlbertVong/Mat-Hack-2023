@@ -2,3 +2,4 @@
 .DS_store
 **.cif
 **.zip
+**.ipynb_checkpoints**
