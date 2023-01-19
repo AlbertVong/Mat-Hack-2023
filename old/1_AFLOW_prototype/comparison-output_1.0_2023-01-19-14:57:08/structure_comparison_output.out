@@ -1,0 +1,735 @@
+=====================================================================================================================
+# 1:2  SG=#225  Wyckoffs=c;a  structures_duplicate=26  duplicate_compounds=26
+  aflow_label=A2B_cF12_225_c_a
+  aflow_parameter_list=a
+  aflow_parameter_values=6.979
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18011--A2B_cF12_225_c_a--Cl_Sr.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180851--AB2_cF12_225_a_c--Ce_O.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180944--A2B_cF12_225_c_a--Mg_Si.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180945--A2B_cF12_225_c_a--Mg_Si.cif    1.11022e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180950--A2B_cF12_225_c_a--F_Pb.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180951--A2B_cF12_225_c_a--F_Pb.cif    6.66134e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180952--A2B_cF12_225_c_a--F_Pb.cif    6.66134e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180953--A2B_cF12_225_c_a--F_Pb.cif    4.44089e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180955--AB2_cF12_225_a_c--Ce_O.cif    1.22125e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181020--AB2_cF12_225_a_c--Ca_F.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181028--AB2_cF12_225_a_c--Ce_O.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182180--AB2_cF12_225_a_c--Ce_O.cif    6.66134e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182181--AB2_cF12_225_a_c--Ce_O.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182182--AB2_cF12_225_a_c--Ce_O.cif    5.55112e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182183--AB2_cF12_225_a_c--Ce_O.cif    6.66134e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182201--A2B_cF12_225_c_a--O_Pr.cif    5.55112e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182988--AB2_cF12_225_a_c--Ce_O.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182989--AB2_cF12_225_a_c--Ce_O.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182990--AB2_cF12_225_a_c--Ce_O.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183500--AB2_cF12_225_a_c--Cd_F.cif    4.44089e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183837--A2B_cF12_225_c_a--K_S.cif    9.99201e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184584--AB2_cF12_225_a_c--Ce_O.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185143--AB2_cF12_225_a_c--Ce_O.cif    9.99201e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186172--AB2_cF12_225_a_c--Ce_O.cif    9.99201e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186493--AB2_cF12_225_a_c--Ce_O.cif    2.22045e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186923--AB2_cF12_225_a_c--Ce_O.cif    5.55112e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189220--AB2_cF12_225_a_c--Co_Si.cif    5.55112e-16
+=====================================================================================================================
+# 1:2  SG=#227  Wyckoffs=b;c  structures_duplicate=31  duplicate_compounds=31
+  aflow_label=AB2_cF24_227_b_c
+  aflow_parameter_list=a
+  aflow_parameter_values=7.531
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180149--AB2_cF24_227_b_c--Ho_Mn.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180150--AB2_cF24_227_b_c--Ho_Mn.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180151--AB2_cF24_227_b_c--Ho_Mn.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180152--AB2_cF24_227_b_c--Ho_Mn.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180153--AB2_cF24_227_b_c--Ho_Mn.cif    1.11022e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180154--AB2_cF24_227_b_c--Ho_Mn.cif    1.11022e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180155--AB2_cF24_227_b_c--Ho_Mn.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180156--AB2_cF24_227_b_c--Ho_Mn.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180157--AB2_cF24_227_b_c--Ho_Mn.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180158--AB2_cF24_227_b_c--Ho_Mn.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180159--AB2_cF24_227_b_c--Ho_Mn.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180160--AB2_cF24_227_b_c--Ho_Mn.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180161--AB2_cF24_227_b_c--Ho_Mn.cif    1.11022e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180162--AB2_cF24_227_b_c--Ho_Mn.cif    1.11022e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180163--AB2_cF24_227_b_c--Ho_Mn.cif    9.99201e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180164--AB2_cF24_227_b_c--Ho_Mn.cif    1.22125e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180165--AB2_cF24_227_b_c--Ho_Mn.cif    1.22125e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180166--AB2_cF24_227_b_c--Ho_Mn.cif    9.99201e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180167--AB2_cF24_227_b_c--Ho_Mn.cif    1.11022e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180168--AB2_cF24_227_b_c--Ho_Mn.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180169--AB2_cF24_227_b_c--Ho_Mn.cif    1.11022e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180170--AB2_cF24_227_b_c--Ho_Mn.cif    1.11022e-15
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180171--AB2_cF24_227_b_c--Ho_Mn.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180172--AB2_cF24_227_b_c--Ho_Mn.cif    9.99201e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180173--AB2_cF24_227_b_c--Ho_Mn.cif    9.99201e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180174--AB2_cF24_227_b_c--Ho_Mn.cif    7.77156e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181696--A2B_cF24_227_c_b--Co_Y.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181697--A2B_cF24_227_c_b--Co_Y.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182692--A2B_cF24_227_d_a--Mg_Si.cif    6.66134e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182695--A2B_cF24_227_d_a--Mg_Sn.cif    9.99201e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189223--A2B_cF24_227_d_a--Co_Ti.cif    8.88178e-16
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189945--A2B_cF24_227_d_a--Co_Zr.cif    8.88178e-16
+=====================================================================================================================
+# 1:2  SG=#19  Wyckoffs=a,a;a  structures_duplicate=0
+  aflow_label=A2B_oP12_19_2a_a
+  aflow_parameter_list=a,b/a,c/a,x1,y1,z1,x2,y2,z2,x3,y3,z3
+  aflow_parameter_values=4.682,1.101666,1.7753097,0.029,0.583,0.518,0.067,0.246,0.279,0.234,0.0083,0.1311
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18030--A2B_oP12_19_2a_a--F_Ge.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#194  Wyckoffs=c;f  structures_duplicate=0
+  aflow_label=AB2_hP6_194_c_f
+  aflow_parameter_list=a,c/a,z2
+  aflow_parameter_values=2.846,3.4690794,0.8915
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180376--AB2_hP6_194_c_f--C_Re.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#139  Wyckoffs=a;e  structures_duplicate=1  duplicate_compounds=1
+  aflow_label=AB2_tI6_139_a_e
+  aflow_parameter_list=a,c/a,z2
+  aflow_parameter_values=3.7524,1.7931724,0.3945
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180397--AB2_tI6_139_a_e--Ba_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186575--AB2_tI6_139_a_e--Ba_C.cif       0.103036
+=====================================================================================================================
+# 1:2  SG=#65  Wyckoffs=a;j  structures_duplicate=0
+  aflow_label=AB2_oC6_65_a_j
+  aflow_parameter_list=a,b/a,c/a,y2
+  aflow_parameter_values=3.8922,1.4786239,0.7816659,0.3768
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180398--AB2_oC6_65_a_j--Ba_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#61  Wyckoffs=c;c,c  structures_duplicate=0
+  aflow_label=AB2_oP24_61_c_2c
+  aflow_parameter_list=a,b/a,c/a,x1,y1,z1,x2,y2,z2,x3,y3,z3
+  aflow_parameter_values=5.5519,1.9485221,1.2001657,0.19536,0.11525,0.98427,0.10794,0.21188,0.84902,0.22773,0.50826,0.39479
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180778--AB2_oP24_61_c_2c--Cl_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#224  Wyckoffs=b;a  structures_duplicate=0
+  aflow_label=A2B_cP6_224_b_a
+  aflow_parameter_list=a
+  aflow_parameter_values=4.2651
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180846--A2B_cP6_224_b_a--Cu_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#92  Wyckoffs=b;a  structures_duplicate=5  duplicate_compounds=5
+  aflow_label=A2B_tP12_92_b_a
+  aflow_parameter_list=a,c/a,x1,x2,y2,z2
+  aflow_parameter_values=4.9501,1.3890628,0.3027,0.1086,0.2388,0.8183
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180898--A2B_tP12_92_b_a--O_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180899--A2B_tP12_92_b_a--O_Si.cif       0.603607
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180900--A2B_tP12_92_b_a--O_Si.cif       0.550877
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180901--A2B_tP12_92_b_a--O_Si.cif       0.564009
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180902--A2B_tP12_92_b_a--O_Si.cif       0.576381
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180903--A2B_tP12_92_b_a--O_Si.cif       0.578285
+=====================================================================================================================
+# 1:2  SG=#14  Wyckoffs=e,e,e,e;e,e  structures_duplicate=2  duplicate_compounds=2
+  aflow_label=A2B_mP24_14_4e_2e
+  aflow_parameter_list=a,b/a,c/a,beta,x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4,x5,y5,z5,x6,y6,z6
+  aflow_parameter_values=8.3575,0.54370326,1.6450254,147.9079,0.5599,0.1704,0.3132,0.9102,0.6122,0.5496,0.3086,0.5739,0.3053,0.8552,0.0326,0.6594,0.5679,0.5079,0.3461,0.0679,0.7258,0.2207
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180904--A2B_mP24_14_4e_2e--O_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180905--A2B_mP24_14_4e_2e--O_Si.cif       0.124292
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180906--A2B_mP24_14_4e_2e--O_Si.cif        0.17119
+=====================================================================================================================
+# 1:2  SG=#137  Wyckoffs=d;a  structures_duplicate=0
+  aflow_label=A2B_tP6_137_d_a
+  aflow_parameter_list=a,c/a,z2
+  aflow_parameter_values=3.5975,1.4356915,0.0466
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180936--A2B_tP6_137_d_a--O_Zr.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#15  Wyckoffs=c,e,f,f,f;f,f  structures_duplicate=0
+  aflow_label=A2B_mC48_15_ce3f_2f
+  aflow_parameter_list=a,b/a,c/a,beta,y2,x3,y3,z3,x4,y4,z4,x5,y5,z5,x6,y6,z6,x7,y7,z7
+  aflow_parameter_values=7.173,1.7186672,1.0001394,119.9862,0.1328,0.7905,0.0382,0.5212,0.7636,0.1464,0.8245,0.4248,0.8738,0.9418,0.2162,0.9077,0.9596,0.3184,0.1416,0.9274
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18112--A2B_mC48_15_ce3f_2f--O_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#141  Wyckoffs=h;e,e,g  structures_duplicate=0
+  aflow_label=AB2_tI48_141_h_2eg
+  aflow_parameter_list=a,c/a,z1,z2,x3,y4,z4
+  aflow_parameter_values=8.776,2.8181404,0,0.25,0.25,0.5,0.1875
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18126--AB2_tI48_141_h_2eg--Hg_I.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#205  Wyckoffs=c;a  structures_duplicate=3  duplicate_compounds=3
+  aflow_label=A2B_cP12_205_c_a
+  aflow_parameter_list=a,x2
+  aflow_parameter_values=4.1483,0.324
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181307--A2B_cP12_205_c_a--O_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181308--A2B_cP12_205_c_a--O_Si.cif      0.0282731
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181309--A2B_cP12_205_c_a--O_Si.cif      0.0282731
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181310--A2B_cP12_205_c_a--O_Si.cif      0.0706051
+=====================================================================================================================
+# 1:2  SG=#160  Wyckoffs=a;a,a  structures_duplicate=0
+  aflow_label=AB2_hR3_160_a_2a
+  aflow_parameter_list=a,c/a,x1,x2,x3
+  aflow_parameter_values=3.449991,5.4724558,0.333333,0.576333,0.754667
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18131--AB2_hR3_160_a_2a--Nb_Se.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#187  Wyckoffs=a,d,g;g,h,i,i  structures_duplicate=0
+  aflow_label=AB2_hP12_187_adg_gh2i
+  aflow_parameter_list=a,c/a,z3,z4,z5,z6,z7
+  aflow_parameter_values=3.44,7.3372093,0.25,0.432,0.934,0.682,0.815
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18132--AB2_hP12_187_adg_gh2i--Nb_Se.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#194  Wyckoffs=f,f;a,b  structures_duplicate=0
+  aflow_label=A2B_hP12_194_2f_ab
+  aflow_parameter_list=a,c/a,z3,z4
+  aflow_parameter_values=3.46,7.2774566,0.935,0.316
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18133--A2B_hP12_194_2f_ab--Se_Ta.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#12  Wyckoffs=a;i  structures_duplicate=1  duplicate_compounds=1
+  aflow_label=AB2_mC6_12_a_i
+  aflow_parameter_list=a,b/a,c/a,beta,x2,z2
+  aflow_parameter_values=4.8267,0.58727495,2.2627054,98.291,0.635,0.908
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181369--AB2_mC6_12_a_i--Co_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181371--AB2_mC6_12_a_i--Co_O.cif      0.0249946
+=====================================================================================================================
+# 1:2  SG=#92  Wyckoffs=b,b;b  structures_duplicate=0
+  aflow_label=A2B_tP24_92_2b_b
+  aflow_parameter_list=a,c/a,x1,y1,z1,x2,y2,z2,x3,y3,z3
+  aflow_parameter_values=5.08,3.6594488,0.01,0.02,0.6261,0.185,0.702,0.5597,0.134,0.346,0.8003
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18137--A2B_tP24_92_2b_b--P_Zn.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#5  Wyckoffs=c,c;c  structures_duplicate=0
+  aflow_label=A2B_mC12_5_2c_c
+  aflow_parameter_list=a,b/a,c/a,beta,x1,y1,z1,x2,y2,z2,x3,y3,z3
+  aflow_parameter_values=13.6741,0.24735083,0.63985198,147.9534,0.202,0.988,0.7968,0.1142,0.067,0.2541,0.96,0.5,0.6156
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18143--ABC_mC12_5_c_c_c--As_As_Nb.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#12  Wyckoffs=i;i,i  structures_duplicate=0
+  aflow_label=AB2_mC12_12_i_2i
+  aflow_parameter_list=a,b/a,c/a,beta,x1,z1,x2,z2,x3,z3
+  aflow_parameter_values=14.5461,0.24968205,0.64773376,147.4008,0.539,0.382,0.885,0.743,0.797,0.201
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18144--ABC_mC12_12_i_i_i--Nb_Sb_Sb.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#191  Wyckoffs=d;a  structures_duplicate=6  duplicate_compounds=6
+  aflow_label=A2B_hP3_191_d_a
+  aflow_parameter_list=a,c/a
+  aflow_parameter_values=4.7689,0.87791734
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181532--A2B_hP3_191_d_a--Au_Ba.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181869--A2B_hP3_191_d_a--B_Mg.cif       0.230677
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181870--A2B_hP3_191_d_a--B_Mg.cif       0.230711
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183472--AB2_hP3_191_a_d--Dy_Ga.cif      0.0816154
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186389--A2B_hP3_191_d_a--B_Mg.cif       0.228318
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode187733--A2B_hP3_191_d_a--B_Mn.cif       0.118415
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189763--AB2_hP3_191_a_d--Ce_Ga.cif       0.120236
+=====================================================================================================================
+# 1:2  SG=#139  Wyckoffs=d;a  structures_duplicate=1  duplicate_compounds=1
+  aflow_label=A2B_tI6_139_d_a
+  aflow_parameter_list=a,c/a
+  aflow_parameter_values=4.038,2.431897
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18161--A2B_tI6_139_d_a--Fe_Th.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18162--A2B_tI6_139_d_a--Co_Th.cif    0.000422732
+=====================================================================================================================
+# 1:2  SG=#154  Wyckoffs=c;a  structures_duplicate=0
+  aflow_label=A2B_hP9_154_c_a
+  aflow_parameter_list=a,c/a,x1,x2,y2,z2
+  aflow_parameter_values=4.9128,1.1000244,0.5303,0.4125,0.1463,0.88116567
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18172--A2B_hP9_154_c_a--O_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#136  Wyckoffs=f;a  structures_duplicate=6  duplicate_compounds=6
+  aflow_label=A2B_tP6_136_f_a
+  aflow_parameter_list=a,c/a,x2
+  aflow_parameter_values=4.512,0.66866135,0.696
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181727--A2B_tP6_136_f_a--H_Mg.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181729--A2B_tP6_136_f_a--H_Mg.cif    0.000253096
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183984--A2B_tP6_136_f_a--O_Sn.cif      0.0137374
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184324--A2B_tP6_136_f_a--O_Sn.cif     0.00642921
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184325--A2B_tP6_136_f_a--O_Sn.cif     0.00505255
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184326--A2B_tP6_136_f_a--O_Sn.cif     0.00576568
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184420--A2B_tP6_136_f_a--O_Sn.cif      0.0073636
+=====================================================================================================================
+# 1:2  SG=#70  Wyckoffs=g;e,g  structures_duplicate=1  duplicate_compounds=1
+  aflow_label=AB2_oF48_70_g_eg
+  aflow_parameter_list=a,b/a,c/a,x1,z2,z3
+  aflow_parameter_values=9.402,0.56179536,1.8981068,0.2851,0.9971,0.7131
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode1819--AB2_oF48_70_f_fg--Co_In.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188474--AB2_oF48_70_e_eg--B_Cr.cif      0.0610275
+=====================================================================================================================
+# 1:2  SG=#14  Wyckoffs=e,e;e  structures_duplicate=0
+  aflow_label=A2B_mP12_14_2e_e
+  aflow_parameter_list=a,b/a,c/a,beta,x1,y1,z1,x2,y2,z2,x3,y3,z3
+  aflow_parameter_values=5.145,1.0121477,1.032206,99.23,0.9297,0.1641,0.1594,0.5577,0.7451,0.0211,0.7242,0.0411,0.7918
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18190--A2B_mP12_14_2e_e--O_Zr.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#180  Wyckoffs=c;i  structures_duplicate=0
+  aflow_label=AB2_hP9_180_c_i
+  aflow_parameter_list=a,c/a,x2
+  aflow_parameter_values=4.6016,1.4277643,0.8342
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182116--AB2_hP9_180_c_i--Mo_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#194  Wyckoffs=d;a,c  structures_duplicate=1  duplicate_compounds=1
+  aflow_label=AB2_hP6_194_d_ac
+  aflow_parameter_list=a,c/a
+  aflow_parameter_values=4.6305,1.2223302
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182428--AB2_hP6_194_c_ad--Sn_Ti.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182430--AB2_hP6_194_c_ad--Ga_Ti.cif     0.00268271
+=====================================================================================================================
+# 1:2  SG=#13  Wyckoffs=a,e,g,g,g,g,g,g,g,g;f,g,g,g,g  structures_duplicate=0
+  aflow_label=A2B_mP54_13_ae8g_f4g
+  aflow_parameter_list=a,b/a,c/a,beta,y2,y3,x4,y4,z4,x5,y5,z5,x6,y6,z6,x7,y7,z7,x8,y8,z8,x9,y9,z9,x10,y10,z10,x11,y11,z11,x12,y12,z12,x13,y13,z13,x14,y14,z14,x15,y15,z15
+  aflow_parameter_values=15.6345,0.55733154,1.1129937,155.0732,0.3023,0.5067,0.4698,0.3889,0.2946,0.0747,0.2764,0.6038,0.6972,0.3903,0.9198,0.2802,0.2073,0.2349,0.9809,0.2259,0.0875,0.3204,0.4931,0.2983,0.045,0.4904,0.6802,0.6349,0.3131,0.5593,0.0438,0.1769,0.0538,0.4281,0.3494,0.3481,0.934,0.3542,0.1123,0.1974,0.3945,0.7533
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182994--A2B_mP54_13_ae8g_f4g--O_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#62  Wyckoffs=c,c;c,c,d  structures_duplicate=1  duplicate_compounds=1
+  aflow_label=AB2_oP24_62_2c_2cd
+  aflow_parameter_list=a,b/a,c/a,x1,z1,x2,z2,x3,z3,x4,z4,x5,y5,z5
+  aflow_parameter_values=8.9326,0.75299465,1.2911694,0.01462,0.693,0.83871,0.09466,0.9166,0.4099,0.1968,0.9655,0.1938,0.0719,0.14505
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183151--AB2_oP24_62_2c_2cd--Ba_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185375--AB2_oP24_62_2c_2cd--Ba_Si.cif     0.00451983
+=====================================================================================================================
+# 1:2  SG=#62  Wyckoffs=c,c;c  structures_duplicate=10  duplicate_compounds=10
+  aflow_label=A2B_oP12_62_2c_c
+  aflow_parameter_list=a,b/a,c/a,x1,z1,x2,z2,x3,z3
+  aflow_parameter_values=8.541,0.62814659,1.2122702,0.0242,0.1764,0.1516,0.5746,0.242,0.8944
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183207--A2B_oP12_62_2c_c--Cs_S.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186512--AB2_oP12_62_c_2c--Ba_Cl.cif      0.0492188
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189977--A2B_oP12_62_2c_c--O_Pb.cif       0.122099
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189978--A2B_oP12_62_2c_c--O_Pb.cif       0.106944
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189979--A2B_oP12_62_2c_c--O_Pb.cif      0.0877882
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189980--A2B_oP12_62_2c_c--O_Pb.cif      0.0450439
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189981--A2B_oP12_62_2c_c--O_Pb.cif      0.0568241
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189982--A2B_oP12_62_2c_c--O_Pb.cif      0.0870559
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189983--A2B_oP12_62_2c_c--O_Pb.cif       0.100186
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189984--A2B_oP12_62_2c_c--O_Pb.cif      0.0788832
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189985--A2B_oP12_62_2c_c--O_Pb.cif       0.108823
+=====================================================================================================================
+# 1:2  SG=#74  Wyckoffs=h;e  structures_duplicate=1  duplicate_compounds=1
+  aflow_label=A2B_oI12_74_h_e
+  aflow_parameter_list=a,b/a,c/a,z1,y2,z2
+  aflow_parameter_values=4.299,1.5803675,1.6957432,0.54,0.45,0.16
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183484--A2B_oI12_74_h_e--Cu_Dy.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189863--AB2_oI12_74_e_i--Eu_Ga.cif      0.0798317
+=====================================================================================================================
+# 1:2  SG=#217  Wyckoffs=g;d  structures_duplicate=0
+  aflow_label=A2B_cI36_217_g_d
+  aflow_parameter_list=a,x2,z2
+  aflow_parameter_values=8.8111,0.8549,0.5148
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183701--A2B_cI36_217_g_d--O_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#12  Wyckoffs=a,c,i,j;i,i  structures_duplicate=7  duplicate_compounds=7
+  aflow_label=A2B_mC24_12_acij_2i
+  aflow_parameter_list=a,b/a,c/a,beta,x3,z3,x4,z4,x5,z5,x6,y6,z6
+  aflow_parameter_values=9.694,0.56968228,0.92644935,90.03,0.165,0.746,0.661,0.939,0.671,0.565,0.578,0.749,0.237
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184171--A2B_mC24_12_acij_2i--Mn_Nd.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184172--A2B_mC24_12_acij_2i--Mn_Nd.cif      0.0485435
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184173--A2B_mC24_12_acij_2i--Mn_Nd.cif      0.0792826
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184174--A2B_mC24_12_acij_2i--Mn_Nd.cif       0.066482
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184175--A2B_mC24_12_adij_2i--Mn_Nd.cif      0.0529877
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184176--A2B_mC24_12_adij_2i--Mn_Nd.cif      0.0714748
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184177--A2B_mC24_12_adij_2i--Mn_Nd.cif      0.0571308
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184178--A2B_mC24_12_acij_2i--Mn_Nd.cif      0.0978028
+=====================================================================================================================
+# 1:2  SG=#63  Wyckoffs=a,c,g;f  structures_duplicate=10  duplicate_compounds=10
+  aflow_label=A2B_oC24_63_acg_f
+  aflow_parameter_list=a,b/a,c/a,y2,y3,z3,x4,y4
+  aflow_parameter_values=5.971,1.7117736,1.6377491,0.84,0.335,0.06,0.26,0.11
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184179--A2B_oC24_63_acg_f--Mn_Nd.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184181--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0668964
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184182--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0776682
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184183--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0937295
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184184--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0639026
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184185--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0800495
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184186--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0403039
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184190--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0517197
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184191--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0611925
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184192--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0641463
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184193--A2B_oC24_63_acg_f--Mn_Nd.cif      0.0494828
+=====================================================================================================================
+# 1:2  SG=#194  Wyckoffs=a,h;f  structures_duplicate=10  duplicate_compounds=10
+  aflow_label=A2B_hP12_194_ah_f
+  aflow_parameter_list=a,c/a,z2,x3
+  aflow_parameter_values=5.5616,1.628668,0.433,0.83099933
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184180--A2B_hP12_194_ah_f--Mn_Nd.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184187--A2B_hP12_194_ah_f--Mn_Nd.cif     0.00424971
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184188--A2B_hP12_194_ah_f--Mn_Nd.cif      0.0136714
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184189--A2B_hP12_194_ah_f--Mn_Nd.cif      0.0112455
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184194--A2B_hP12_194_ah_f--Mn_Nd.cif      0.0211522
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184195--A2B_hP12_194_ah_f--Mn_Nd.cif      0.0149156
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184196--A2B_hP12_194_ah_f--Mn_Nd.cif      0.0101636
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184197--A2B_hP12_194_ah_f--Mn_Nd.cif      0.0440923
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184412--AB2_hP12_194_f_ah--Mg_Zn.cif      0.0154098
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189353--A2B_hP12_194_ah_f--Mn_Zr.cif      0.0168097
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189877--A2B_hP12_194_ah_f--Mn_Ti.cif      0.0181665
+=====================================================================================================================
+# 1:2  SG=#164  Wyckoffs=a;d  structures_duplicate=0
+  aflow_label=AB2_hP3_164_a_d
+  aflow_parameter_list=a,c/a,z2
+  aflow_parameter_values=3.0484,1.6159297,0.25
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185289--AB2_hP3_164_a_d--N_Ta.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#166  Wyckoffs=a;c  structures_duplicate=0
+  aflow_label=AB2_hR3_166_a_c
+  aflow_parameter_list=a,c/a,x2
+  aflow_parameter_values=5.0166655,1.4456791,0.5867
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186576--AB2_hR3_166_a_c--Ba_C.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#58  Wyckoffs=a;g  structures_duplicate=14  duplicate_compounds=14
+  aflow_label=AB2_oP6_58_a_g
+  aflow_parameter_list=a,b/a,c/a,x2,y2
+  aflow_parameter_values=5.8193,1.1225233,0.55003179,0.1878,0.3565
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186621--AB2_oP6_58_a_g--Fe_Sb.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186622--AB2_oP6_58_a_g--Fe_Sb.cif     0.00925795
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186623--AB2_oP6_58_a_g--Fe_Sb.cif     0.00749216
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186624--AB2_oP6_58_a_g--Fe_Sb.cif      0.0109064
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186625--AB2_oP6_58_a_g--Fe_Sb.cif      0.0164468
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186626--AB2_oP6_58_a_g--Fe_Sb.cif      0.0179049
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186627--AB2_oP6_58_a_g--Fe_Sb.cif      0.0172055
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186628--AB2_oP6_58_a_g--Fe_Sb.cif      0.0333803
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186629--AB2_oP6_58_a_g--Fe_Sb.cif      0.0284376
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186630--AB2_oP6_58_a_g--Fe_Sb.cif      0.0290378
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186631--AB2_oP6_58_a_g--Fe_Sb.cif      0.0238364
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186632--AB2_oP6_58_a_g--Fe_Sb.cif      0.0300053
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186633--AB2_oP6_58_a_g--Fe_Sb.cif       0.032981
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186634--AB2_oP6_58_a_g--Fe_Sb.cif      0.0292597
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186635--AB2_oP6_58_a_g--Fe_Sb.cif      0.0287823
+=====================================================================================================================
+# 1:2  SG=#140  Wyckoffs=a;h  structures_duplicate=6  duplicate_compounds=6
+  aflow_label=AB2_tI12_140_a_h
+  aflow_parameter_list=a,c/a,x2
+  aflow_parameter_values=6.8441,0.76800456,0.1233
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186636--AB2_tI12_140_a_h--Fe_Sb.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186637--AB2_tI12_140_a_h--Fe_Sb.cif       0.032293
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186638--AB2_tI12_140_a_h--Fe_Sb.cif      0.0399888
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186639--AB2_tI12_140_a_h--Fe_Sb.cif      0.0438541
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186640--AB2_tI12_140_a_h--Fe_Sb.cif      0.0969774
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186641--AB2_tI12_140_a_h--Fe_Sb.cif        0.12641
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186642--AB2_tI12_140_a_h--Fe_Sb.cif       0.141295
+=====================================================================================================================
+# 1:2  SG=#62  Wyckoffs=c,c,c,c,c,c,c,c;c,c,c,c  structures_duplicate=0
+  aflow_label=A2B_oP48_62_8c_4c
+  aflow_parameter_list=a,b/a,c/a,x1,z1,x2,z2,x3,z3,x4,z4,x5,z5,x6,z6,x7,z7,x8,z8,x9,z9,x10,z10,x11,z11,x12,z12
+  aflow_parameter_values=17.513,0.1691315,0.60817678,0.9731,0.7522,0.9352,0.4187,0.0801,0.0287,0.8902,0.1882,0.1401,0.3811,0.8369,0.8301,0.1819,0.6113,0.2227,0.9544,0.07843,0.6972,0.09904,0.2152,0.85256,0.0214,0.83041,0.5018
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186707--A2B_oP48_62_8c_4c--O_Ti.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#64  Wyckoffs=e,f,f,f,f,g,g;a,e,f,g  structures_duplicate=0
+  aflow_label=A2B_oC108_64_e4f2g_aefg
+  aflow_parameter_list=a,b/a,c/a,y2,y3,y4,z4,y5,z5,y6,z6,y7,z7,y8,z8,x9,y9,z9,x10,y10,z10,x11,y11,z11
+  aflow_parameter_values=8.5167,1.7004943,1.7959891,0.163,0.401,0.1018,0.8606,0.1647,0.0223,0.173,0.5871,0.2383,0.7476,0.016,0.276,0.1575,0.0581,0.1294,0.2368,0.0816,0.5382,0.711,0.739,0.41
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18753--A2B_oC108_64_e4f2g_aefg--Ga_Li.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#5  Wyckoffs=c,c;c,c,c,c  structures_duplicate=0
+  aflow_label=AB2_mC24_5_2c_4c
+  aflow_parameter_list=a,b/a,c/a,beta,x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4,x5,y5,z5,x6,y6,z6
+  aflow_parameter_values=9.3598,0.73087032,0.62909464,112.6634,0.3317,0.236,0.5417,0.802,0,0.01,0.421,0.244,0.237,0.907,0.087,0.68,0.367,0.968,0.807,0.363,0.767,0.253
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188067--AB2_mC24_5_2c_4c--Ca_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#122  Wyckoffs=a;d  structures_duplicate=0
+  aflow_label=AB2_tI12_122_a_d
+  aflow_parameter_list=a,c/a,x2
+  aflow_parameter_values=3.594,1.646355,0.213
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188890--AB2_tI12_122_a_d--C_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#19  Wyckoffs=a,a;a,a,a,a  structures_duplicate=0
+  aflow_label=AB2_oP24_19_2a_4a
+  aflow_parameter_list=a,b/a,c/a,x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4,x5,y5,z5,x6,y6,z6
+  aflow_parameter_values=4.386,1.3878249,1.4286366,0.078,0.189,0.938,0.204,0.336,0.556,0.027,0.242,0.738,0.037,0.732,0.071,0.068,0.837,0.448,0.127,0.525,0.491
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188892--AB2_oP24_19_2a_4a--C_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#64  Wyckoffs=a;f  structures_duplicate=0
+  aflow_label=AB2_oC12_64_a_f
+  aflow_parameter_list=a,b/a,c/a,y2,z2
+  aflow_parameter_values=4.027,1.0280606,1.4479762,0.216,0.637
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188893--AB2_oC12_64_a_f--C_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#15  Wyckoffs=f,f;e,e,f,f,f  structures_duplicate=0
+  aflow_label=AB2_mC48_15_2f_2e3f
+  aflow_parameter_list=a,b/a,c/a,beta,y1,y2,x3,y3,z3,x4,y4,z4,x5,y5,z5,x6,y6,z6,x7,y7,z7
+  aflow_parameter_values=10.2674,1.0000682,2.149999,125.848,0.674,0.198,0.0359,0.0604,0.1792,0.7141,0.3102,0.3208,0.1862,0.936,0.3988,0.5647,0.686,0.1029,0.2364,0.563,0.7484
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18901--AB2_mC48_15_2f_2e3f--Ga_S.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#227  Wyckoffs=e;c,f  structures_duplicate=0
+  aflow_label=AB2_cF96_227_e_cf
+  aflow_parameter_list=a,x2,x3
+  aflow_parameter_values=11.293,0.786,0.814
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189224--AB2_cF96_227_e_cf--Co_Ti.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#1  Wyckoffs=a,a,a,a,a;a,a,a,a,a,a,a,a,a,a  structures_duplicate=0
+  aflow_label=AB2_aP15_1_5a_10a
+  aflow_parameter_list=a,b/a,c/a,alpha,beta,gamma,x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4,x5,y5,z5,x6,y6,z6,x7,y7,z7,x8,y8,z8,x9,y9,z9,x10,y10,z10,x11,y11,z11,x12,y12,z12,x13,y13,z13,x14,y14,z14,x15,y15,z15
+  aflow_parameter_values=3.9545,1.6819826,3.6473638,98.249,92.5309,107.2005,0,0,0,0.1292,0.4218,0.5862,0.2726,0.8579,0.1801,0.5569,0.2031,0.7889,0.7067,0.6457,0.3863,0.0679,0.3609,0.4001,0.1948,0.4837,0.7758,0.3351,0.9123,0.3627,0.352,0.7319,0.9921,0.4982,0.1477,0.6088,0.6211,0.2571,0.9694,0.6395,0.5859,0.1976,0.7651,0.7044,0.5686,0.9081,0.118,0.171,0.927,0.9435,0.807
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189404--AB2_aP15_1_5a_10a--Ir_Te.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#12  Wyckoffs=e,i,i,i,i,i,i,i,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j;i,i,i,i,i,j,j,j,j,j,j,j  structures_duplicate=0
+  aflow_label=A2B_mC228_12_e7i15j_5i7j
+  aflow_parameter_list=a,b/a,c/a,beta,x2,z2,x3,z3,x4,z4,x5,z5,x6,z6,x7,z7,x8,z8,x9,z9,x10,z10,x11,z11,x12,z12,x13,z13,x14,y14,z14,x15,y15,z15,x16,y16,z16,x17,y17,z17,x18,y18,z18,x19,y19,z19,x20,y20,z20,x21,y21,z21,x22,y22,z22,x23,y23,z23,x24,y24,z24,x25,y25,z25,x26,y26,z26,x27,y27,z27,x28,y28,z28,x29,y29,z29,x30,y30,z30,x31,y31,z31,x32,y32,z32,x33,y33,z33,x34,y34,z34,x35,y35,z35
+  aflow_parameter_values=32.8438,0.42363551,0.87013074,158.2188,0.89715,0.1449,0.36124,0.92209,0.66568,0.24088,0.8938,0.61164,0.29631,0.02628,0.50594,0.2361,0.2752,0.51901,0.3873,0.08249,0.75804,0.46495,0.39465,0.6182,0.76868,0.99852,0.01711,0.25192,0.03838,0.90647,0.24288,0.7316,0.90503,0.92995,0.56798,0.78161,0.76159,0.40646,0.90572,0.5995,0.16495,0.77695,0.34015,0.3635,0.72558,0.53486,0.04957,0.7308,0.2897,0.16592,0.629,0.17308,0.01021,0.63139,0.06984,0.82098,0.67935,0.90192,0.2003,0.68578,0.29349,0.94578,0.76687,0.09676,0.74411,0.74041,0.90485,0.87891,0.59354,0.04074,0.21968,0.59491,0.39944,0.88015,0.61313,0.92845,0.13681,0.61264,0.19672,0.84646,0.69465,0.9871,0.23914,0.6948,0.39324,0.05184,0.79663,0.24721,0.70063,0.79554,0.90003,0.45201,0.7886,0.65923
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189933--A2B_mC228_12_e7i15j_5i7j--O_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#194  Wyckoffs=b;f  structures_duplicate=1  duplicate_compounds=1
+  aflow_label=AB2_hP6_194_b_f
+  aflow_parameter_list=a,c/a,z2
+  aflow_parameter_values=3.45,3.6347826,0.384
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18129--AB2_hP6_194_b_f--Nb_Se.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18130--A2B_hP6_194_f_b--Se_Ta.cif       0.453704
+=====================================================================================================================
+# 1:2  SG=#139  Wyckoffs=a;e  structures_duplicate=0
+  aflow_label=AB2_tI6_139_a_e
+  aflow_parameter_list=a,c/a,z2
+  aflow_parameter_values=3.2042,2.4495038,0.3352
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182115--AB2_tI6_139_a_e--Mo_Si.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#92  Wyckoffs=a;b  structures_duplicate=0
+  aflow_label=AB2_tP12_92_a_b
+  aflow_parameter_list=a,c/a,x1,x2,y2,z2
+  aflow_parameter_values=4.135,1.3613059,0.472,0.206,0.225,0.712
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188894--AB2_tP12_92_a_b--C_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#137  Wyckoffs=a;d  structures_duplicate=0
+  aflow_label=AB2_tP6_137_a_d
+  aflow_parameter_list=a,c/a,z2
+  aflow_parameter_values=4.416,2.8471467,0.6107
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181575--AB2_tP6_137_a_d--Hg_I.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#136  Wyckoffs=a;f  structures_duplicate=0
+  aflow_label=AB2_tP6_136_a_f
+  aflow_parameter_list=a,c/a,x2
+  aflow_parameter_values=3.427,1.1788737,0.245
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188891--AB2_tP6_136_a_f--C_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#14  Wyckoffs=e,e;e  structures_duplicate=0
+  aflow_label=A2B_mP12_14_2e_e
+  aflow_parameter_list=a,b/a,c/a,beta,x1,y1,z1,x2,y2,z2,x3,y3,z3
+  aflow_parameter_values=7.8686,0.88075388,1.2118293,154.0814,0.4262,0.0154,0.7337,0.2282,0.6778,0.7913,0.016,0.229,0.144
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182916--A2B_mP12_14_2e_e--Ag_S.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#62  Wyckoffs=c,c;c  structures_duplicate=2  duplicate_compounds=2
+  aflow_label=A2B_oP12_62_2c_c
+  aflow_parameter_list=a,b/a,c/a,x1,z1,x2,z2,x3,z3
+  aflow_parameter_values=7,0.77285714,1.3857143,0.008,0.214,0.215,0.581,0.245,0.908
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183208--A2B_oP12_62_2c_c--Cs_S.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185001--A2B_oP12_62_2c_c--Pd_Sn.cif       0.233627
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185002--A2B_oP12_62_2c_c--Pd_Sn.cif       0.224461
+=====================================================================================================================
+# 1:2  SG=#164  Wyckoffs=a;d  structures_duplicate=2  duplicate_compounds=2
+  aflow_label=AB2_hP3_164_a_d
+  aflow_parameter_list=a,c/a,z2
+  aflow_parameter_values=3.4631,1.2841385,0.256
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188068--AB2_hP3_164_a_d--Ca_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189371--AB2_hP3_164_a_d--Ir_Te.cif      0.0856278
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189403--AB2_hP3_164_a_d--Ir_Te.cif      0.0910602
+=====================================================================================================================
+# 1:2  SG=#62  Wyckoffs=c;c,c  structures_duplicate=0
+  aflow_label=AB2_oP12_62_c_2c
+  aflow_parameter_list=a,b/a,c/a,x1,z1,x2,z2,x3,z3
+  aflow_parameter_values=9.9613,0.30359491,0.46277092,0.8542,0.049,0.0535,0.2022,0.201,0.7048
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184786--AB2_oP12_62_c_2c--Fe_O.cif
+---------------------------------------------------------------------------------------------------------------------
+  no duplicates                                                                                       
+---------------------------------------------------------------------------------------------------------------------
+
+=====================================================================================================================
+# 1:2  SG=#62  Wyckoffs=c;c,c  structures_duplicate=1  duplicate_compounds=1
+  aflow_label=AB2_oP12_62_c_2c
+  aflow_parameter_list=a,b/a,c/a,x1,z1,x2,z2,x3,z3
+  aflow_parameter_values=5.5464,0.53045219,1.8116796,0.856,0.3575,0.8462,0.7828,0.8426,0.0744
+  prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186200--AB2_oP12_62_c_2c--P_Re.cif
+---------------------------------------------------------------------------------------------------------------------
+  list of duplicates                                                                                           misfit
+---------------------------------------------------------------------------------------------------------------------
+  ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186202--AB2_oP12_62_c_2c--P_Re.cif       0.135059

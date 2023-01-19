@@ -1,0 +1,393 @@
+OPTIONS:
+-D ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow --np=7 --primitive --ignore_decorations --misfit_match=1.0 --misfit_family=1.0 --ignore_local_geometry --add_aflow_prototype_designation --print_mapping
+
+OUTPUT:
+00000  MESSAGE XtalFinderCalculator::getOptions(): Misfit threshold for matched structures: 1 (default: 0.1) - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:09 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::getOptions(): Misfit threshold for structures in the same family: 1 (default: 0.2) - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:09 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::getOptions(): OPTIONS: Cast unique structures into AFLOW standard designation. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:09 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::getOptions(): OPTIONS: Converting all structures to a primitive representation. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:09 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::getOptions(): OPTIONS: Do not calculate unique atom decorations. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:09 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE compare::compareInputStructures(): Comparison directory: ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:09 2023] - [aflow_compare_structure.cpp]
+00000  MESSAGE compare::compareInputStructures(): OPTIONS: Performing structure type comparisons (any atomic species). - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:09 2023] - [aflow_compare_structure.cpp]
+00000  MESSAGE XtalFinderCalculator::loadStructuresFromDirectory(): Loading 213 files in directory ... - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:09 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::compareMultipleStructures(): Total number of structures to compare: 210 - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:26 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::convertStructures(): Converting structures standard representation (primitive, Minkowski, and/or Niggli). - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:26 2023] - [aflow_compare_structure_function.cpp]
+[32mCCCCC[0m[32m[5m[1m  COMPLETE [0m[32mXtalFinderCalculator::convertStructures(): All structures converted. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:28 2023] - [aflow_compare_structure_function.cpp]
+[0m00000  MESSAGE XtalFinderCalculator::calculateSymmetries(): Calculating the symmetries of the structure(s). - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:57:28 2023] - [aflow_compare_structure_function.cpp]
+[32mCCCCC[0m[32m[5m[1m  COMPLETE [0m[32mXtalFinderCalculator::calculateSymmetries(): Symmetries calculated. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:17 2023] - [aflow_compare_structure_function.cpp]
+[0m00000  MESSAGE XtalFinderCalculator::calculateLFAEnvironments(): Calculating the environments of the structure(s). - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:17 2023] - [aflow_compare_structure_function.cpp]
+[32mCCCCC[0m[32m[5m[1m  COMPLETE [0m[32mXtalFinderCalculator::calculateLFAEnvironments(): Environments calculated. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:17 2023] - [aflow_compare_structure_function.cpp]
+[0m00000  MESSAGE XtalFinderCalculator::calculateNearestNeighbors(): Calculating the nearest neighbors of all the structure(s). - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:17 2023] - [aflow_compare_structure_function.cpp]
+[32mCCCCC[0m[32m[5m[1m  COMPLETE [0m[32mXtalFinderCalculator::calculateNearestNeighbors(): Nearest neighbors information calculated. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:18 2023] - [aflow_compare_structure_function.cpp]
+[0m00000  MESSAGE XtalFinderCalculator::groupStructurePrototypes(): Grouping sets of comparisons. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:18 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::groupStructurePrototypes(): Number of comparison groups: 51. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:18 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::runComparisonScheme(): Running comparisons ... - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:18 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::runComparisonScheme(): Number of unmatched structures: 16. Continuing comparisons ... - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::checkForBetterMatches(): Check if initial structure groupings match better (lower similarity metric) with other groups. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18011--A2B_cF12_225_c_a--Cl_Sr.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180851--AB2_cF12_225_a_c--Ce_O.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180944--A2B_cF12_225_c_a--Mg_Si.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180945--A2B_cF12_225_c_a--Mg_Si.cif1.11022e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180950--A2B_cF12_225_c_a--F_Pb.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180951--A2B_cF12_225_c_a--F_Pb.cif6.66134e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180952--A2B_cF12_225_c_a--F_Pb.cif6.66134e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180953--A2B_cF12_225_c_a--F_Pb.cif4.44089e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180955--AB2_cF12_225_a_c--Ce_O.cif1.22125e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181020--AB2_cF12_225_a_c--Ca_F.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181028--AB2_cF12_225_a_c--Ce_O.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182180--AB2_cF12_225_a_c--Ce_O.cif6.66134e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182181--AB2_cF12_225_a_c--Ce_O.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182182--AB2_cF12_225_a_c--Ce_O.cif5.55112e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182183--AB2_cF12_225_a_c--Ce_O.cif6.66134e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182201--A2B_cF12_225_c_a--O_Pr.cif5.55112e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182988--AB2_cF12_225_a_c--Ce_O.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182989--AB2_cF12_225_a_c--Ce_O.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182990--AB2_cF12_225_a_c--Ce_O.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183500--AB2_cF12_225_a_c--Cd_F.cif4.44089e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183837--A2B_cF12_225_c_a--K_S.cif9.99201e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184584--AB2_cF12_225_a_c--Ce_O.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185143--AB2_cF12_225_a_c--Ce_O.cif9.99201e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186172--AB2_cF12_225_a_c--Ce_O.cif9.99201e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186493--AB2_cF12_225_a_c--Ce_O.cif2.22045e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186923--AB2_cF12_225_a_c--Ce_O.cif5.55112e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189220--AB2_cF12_225_a_c--Co_Si.cif5.55112e-16    
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180149--AB2_cF24_227_b_c--Ho_Mn.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180150--AB2_cF24_227_b_c--Ho_Mn.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180151--AB2_cF24_227_b_c--Ho_Mn.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180152--AB2_cF24_227_b_c--Ho_Mn.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180153--AB2_cF24_227_b_c--Ho_Mn.cif1.11022e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180154--AB2_cF24_227_b_c--Ho_Mn.cif1.11022e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180155--AB2_cF24_227_b_c--Ho_Mn.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180156--AB2_cF24_227_b_c--Ho_Mn.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180157--AB2_cF24_227_b_c--Ho_Mn.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180158--AB2_cF24_227_b_c--Ho_Mn.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180159--AB2_cF24_227_b_c--Ho_Mn.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180160--AB2_cF24_227_b_c--Ho_Mn.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180161--AB2_cF24_227_b_c--Ho_Mn.cif1.11022e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180162--AB2_cF24_227_b_c--Ho_Mn.cif1.11022e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180163--AB2_cF24_227_b_c--Ho_Mn.cif9.99201e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180164--AB2_cF24_227_b_c--Ho_Mn.cif1.22125e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180165--AB2_cF24_227_b_c--Ho_Mn.cif1.22125e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180166--AB2_cF24_227_b_c--Ho_Mn.cif9.99201e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180167--AB2_cF24_227_b_c--Ho_Mn.cif1.11022e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180168--AB2_cF24_227_b_c--Ho_Mn.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180169--AB2_cF24_227_b_c--Ho_Mn.cif1.11022e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180170--AB2_cF24_227_b_c--Ho_Mn.cif1.11022e-15    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180171--AB2_cF24_227_b_c--Ho_Mn.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180172--AB2_cF24_227_b_c--Ho_Mn.cif9.99201e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180173--AB2_cF24_227_b_c--Ho_Mn.cif9.99201e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180174--AB2_cF24_227_b_c--Ho_Mn.cif7.77156e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181696--A2B_cF24_227_c_b--Co_Y.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181697--A2B_cF24_227_c_b--Co_Y.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182692--A2B_cF24_227_d_a--Mg_Si.cif6.66134e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182695--A2B_cF24_227_d_a--Mg_Sn.cif9.99201e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189223--A2B_cF24_227_d_a--Co_Ti.cif8.88178e-16    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189945--A2B_cF24_227_d_a--Co_Zr.cif8.88178e-16    
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18030--A2B_oP12_19_2a_a--F_Ge.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180376--AB2_hP6_194_c_f--C_Re.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180397--AB2_tI6_139_a_e--Ba_O.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186575--AB2_tI6_139_a_e--Ba_C.cif0.103036       
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180398--AB2_oC6_65_a_j--Ba_O.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180778--AB2_oP24_61_c_2c--Cl_O.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180846--A2B_cP6_224_b_a--Cu_O.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180898--A2B_tP12_92_b_a--O_Si.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180899--A2B_tP12_92_b_a--O_Si.cif0.603607       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180900--A2B_tP12_92_b_a--O_Si.cif0.550877       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180901--A2B_tP12_92_b_a--O_Si.cif0.564009       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180902--A2B_tP12_92_b_a--O_Si.cif0.576381       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180903--A2B_tP12_92_b_a--O_Si.cif0.578285       
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180904--A2B_mP24_14_4e_2e--O_Si.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180905--A2B_mP24_14_4e_2e--O_Si.cif0.124292       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180906--A2B_mP24_14_4e_2e--O_Si.cif0.17119        
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode180936--A2B_tP6_137_d_a--O_Zr.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18112--A2B_mC48_15_ce3f_2f--O_Si.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18126--AB2_tI48_141_h_2eg--Hg_I.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181307--A2B_cP12_205_c_a--O_Si.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181308--A2B_cP12_205_c_a--O_Si.cif0.0282731      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181309--A2B_cP12_205_c_a--O_Si.cif0.0282731      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181310--A2B_cP12_205_c_a--O_Si.cif0.0706051      
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18131--AB2_hR3_160_a_2a--Nb_Se.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18132--AB2_hP12_187_adg_gh2i--Nb_Se.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18133--A2B_hP12_194_2f_ab--Se_Ta.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181369--AB2_mC6_12_a_i--Co_O.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181371--AB2_mC6_12_a_i--Co_O.cif0.0249946      
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18137--A2B_tP24_92_2b_b--P_Zn.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18143--ABC_mC12_5_c_c_c--As_As_Nb.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18144--ABC_mC12_12_i_i_i--Nb_Sb_Sb.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181532--A2B_hP3_191_d_a--Au_Ba.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181869--A2B_hP3_191_d_a--B_Mg.cif0.230677       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181870--A2B_hP3_191_d_a--B_Mg.cif0.230711       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183472--AB2_hP3_191_a_d--Dy_Ga.cif0.0816154      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186389--A2B_hP3_191_d_a--B_Mg.cif0.228318       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode187733--A2B_hP3_191_d_a--B_Mn.cif0.118415       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189763--AB2_hP3_191_a_d--Ce_Ga.cif0.120236       
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18161--A2B_tI6_139_d_a--Fe_Th.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18162--A2B_tI6_139_d_a--Co_Th.cif0.000422732    
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18172--A2B_hP9_154_c_a--O_Si.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181727--A2B_tP6_136_f_a--H_Mg.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181729--A2B_tP6_136_f_a--H_Mg.cif0.000253096    
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183984--A2B_tP6_136_f_a--O_Sn.cif0.0137374      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184324--A2B_tP6_136_f_a--O_Sn.cif0.00642921     
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184325--A2B_tP6_136_f_a--O_Sn.cif0.00505255     
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184326--A2B_tP6_136_f_a--O_Sn.cif0.00576568     
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184420--A2B_tP6_136_f_a--O_Sn.cif0.0073636      
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode1819--AB2_oF48_70_f_fg--Co_In.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188474--AB2_oF48_70_e_eg--B_Cr.cif0.0610275      
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18190--A2B_mP12_14_2e_e--O_Zr.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182116--AB2_hP9_180_c_i--Mo_Si.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182428--AB2_hP6_194_c_ad--Sn_Ti.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182430--AB2_hP6_194_c_ad--Ga_Ti.cif0.00268271     
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182994--A2B_mP54_13_ae8g_f4g--O_Si.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183151--AB2_oP24_62_2c_2cd--Ba_Si.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185375--AB2_oP24_62_2c_2cd--Ba_Si.cif0.00451983     
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183207--A2B_oP12_62_2c_c--Cs_S.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186512--AB2_oP12_62_c_2c--Ba_Cl.cif0.0492188      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189977--A2B_oP12_62_2c_c--O_Pb.cif0.122099       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189978--A2B_oP12_62_2c_c--O_Pb.cif0.106944       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189979--A2B_oP12_62_2c_c--O_Pb.cif0.0877882      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189980--A2B_oP12_62_2c_c--O_Pb.cif0.0450439      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189981--A2B_oP12_62_2c_c--O_Pb.cif0.0568241      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189982--A2B_oP12_62_2c_c--O_Pb.cif0.0870559      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189983--A2B_oP12_62_2c_c--O_Pb.cif0.100186       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189984--A2B_oP12_62_2c_c--O_Pb.cif0.0788832      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189985--A2B_oP12_62_2c_c--O_Pb.cif0.108823       
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183484--A2B_oI12_74_h_e--Cu_Dy.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189863--AB2_oI12_74_e_i--Eu_Ga.cif0.0798317      
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183701--A2B_cI36_217_g_d--O_Si.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184171--A2B_mC24_12_acij_2i--Mn_Nd.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184172--A2B_mC24_12_acij_2i--Mn_Nd.cif0.0485435      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184173--A2B_mC24_12_acij_2i--Mn_Nd.cif0.0792826      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184174--A2B_mC24_12_acij_2i--Mn_Nd.cif0.066482       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184175--A2B_mC24_12_adij_2i--Mn_Nd.cif0.0529877      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184176--A2B_mC24_12_adij_2i--Mn_Nd.cif0.0714748      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184177--A2B_mC24_12_adij_2i--Mn_Nd.cif0.0571308      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184178--A2B_mC24_12_acij_2i--Mn_Nd.cif0.0978028      
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184179--A2B_oC24_63_acg_f--Mn_Nd.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184181--A2B_oC24_63_acg_f--Mn_Nd.cif0.0668964      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184182--A2B_oC24_63_acg_f--Mn_Nd.cif0.0776682      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184183--A2B_oC24_63_acg_f--Mn_Nd.cif0.0937295      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184184--A2B_oC24_63_acg_f--Mn_Nd.cif0.0639026      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184185--A2B_oC24_63_acg_f--Mn_Nd.cif0.0800495      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184186--A2B_oC24_63_acg_f--Mn_Nd.cif0.0403039      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184190--A2B_oC24_63_acg_f--Mn_Nd.cif0.0517197      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184191--A2B_oC24_63_acg_f--Mn_Nd.cif0.0611925      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184192--A2B_oC24_63_acg_f--Mn_Nd.cif0.0641463      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184193--A2B_oC24_63_acg_f--Mn_Nd.cif0.0494828      
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184180--A2B_hP12_194_ah_f--Mn_Nd.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184187--A2B_hP12_194_ah_f--Mn_Nd.cif0.00424971     
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184188--A2B_hP12_194_ah_f--Mn_Nd.cif0.0136714      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184189--A2B_hP12_194_ah_f--Mn_Nd.cif0.0112455      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184194--A2B_hP12_194_ah_f--Mn_Nd.cif0.0211522      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184195--A2B_hP12_194_ah_f--Mn_Nd.cif0.0149156      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184196--A2B_hP12_194_ah_f--Mn_Nd.cif0.0101636      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184197--A2B_hP12_194_ah_f--Mn_Nd.cif0.0440923      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184412--AB2_hP12_194_f_ah--Mg_Zn.cif0.0154098      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189353--A2B_hP12_194_ah_f--Mn_Zr.cif0.0168097      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189877--A2B_hP12_194_ah_f--Mn_Ti.cif0.0181665      
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185289--AB2_hP3_164_a_d--N_Ta.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186576--AB2_hR3_166_a_c--Ba_C.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186621--AB2_oP6_58_a_g--Fe_Sb.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186622--AB2_oP6_58_a_g--Fe_Sb.cif0.00925795     
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186623--AB2_oP6_58_a_g--Fe_Sb.cif0.00749216     
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186624--AB2_oP6_58_a_g--Fe_Sb.cif0.0109064      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186625--AB2_oP6_58_a_g--Fe_Sb.cif0.0164468      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186626--AB2_oP6_58_a_g--Fe_Sb.cif0.0179049      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186627--AB2_oP6_58_a_g--Fe_Sb.cif0.0172055      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186628--AB2_oP6_58_a_g--Fe_Sb.cif0.0333803      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186629--AB2_oP6_58_a_g--Fe_Sb.cif0.0284376      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186630--AB2_oP6_58_a_g--Fe_Sb.cif0.0290378      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186631--AB2_oP6_58_a_g--Fe_Sb.cif0.0238364      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186632--AB2_oP6_58_a_g--Fe_Sb.cif0.0300053      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186633--AB2_oP6_58_a_g--Fe_Sb.cif0.032981       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186634--AB2_oP6_58_a_g--Fe_Sb.cif0.0292597      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186635--AB2_oP6_58_a_g--Fe_Sb.cif0.0287823      
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186636--AB2_tI12_140_a_h--Fe_Sb.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186637--AB2_tI12_140_a_h--Fe_Sb.cif0.032293       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186638--AB2_tI12_140_a_h--Fe_Sb.cif0.0399888      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186639--AB2_tI12_140_a_h--Fe_Sb.cif0.0438541      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186640--AB2_tI12_140_a_h--Fe_Sb.cif0.0969774      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186641--AB2_tI12_140_a_h--Fe_Sb.cif0.12641        
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186642--AB2_tI12_140_a_h--Fe_Sb.cif0.141295       
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186707--A2B_oP48_62_8c_4c--O_Ti.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18753--A2B_oC108_64_e4f2g_aefg--Ga_Li.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188067--AB2_mC24_5_2c_4c--Ca_O.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188890--AB2_tI12_122_a_d--C_O.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188892--AB2_oP24_19_2a_4a--C_O.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188893--AB2_oC12_64_a_f--C_O.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18901--AB2_mC48_15_2f_2e3f--Ga_S.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189224--AB2_cF96_227_e_cf--Co_Ti.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189404--AB2_aP15_1_5a_10a--Ir_Te.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189933--A2B_mC228_12_e7i15j_5i7j--O_Si.cif
+   No duplicates. 
+00000  MESSAGE XtalFinderCalculator::runComparisonScheme(): Continuing comparisons to match 16 structures ... - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::runComparisonScheme(): Number of unmatched structures: 3. Continuing comparisons ... - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18129--AB2_hP6_194_b_f--Nb_Se.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode18130--A2B_hP6_194_f_b--Se_Ta.cif0.453704       
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182115--AB2_tI6_139_a_e--Mo_Si.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188894--AB2_tP12_92_a_b--C_O.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode181575--AB2_tP6_137_a_d--Hg_I.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188891--AB2_tP6_136_a_f--C_O.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode182916--A2B_mP12_14_2e_e--Ag_S.cif
+   No duplicates. 
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode183208--A2B_oP12_62_2c_c--Cs_S.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185001--A2B_oP12_62_2c_c--Pd_Sn.cif0.233627       
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode185002--A2B_oP12_62_2c_c--Pd_Sn.cif0.224461       
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode188068--AB2_hP3_164_a_d--Ca_O.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189371--AB2_hP3_164_a_d--Ir_Te.cif0.0856278      
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode189403--AB2_hP3_164_a_d--Ir_Te.cif0.0910602      
+00000  MESSAGE XtalFinderCalculator::runComparisonScheme(): Continuing comparisons to match 3 structures ... - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+00000  MESSAGE XtalFinderCalculator::runComparisonScheme(): Number of unmatched structures: 2. Continuing comparisons ... - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode184786--AB2_oP12_62_c_2c--Fe_O.cif
+   No duplicates. 
+00000  MESSAGE XtalFinderCalculator::runComparisonScheme(): Continuing comparisons to match 2 structures ... - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+Identified unique prototype: 
+   prototype=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186200--AB2_oP12_62_c_2c--P_Re.cif
+   List of duplicates                                                                                  misfit value   
+   -------------------------------------------------------------------------------------------------------------------
+   ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/_CollCode186202--AB2_oP12_62_c_2c--P_Re.cif0.135059       
+[32mCCCCC[0m[32m[5m[1m  COMPLETE [0m[32mXtalFinderCalculator::runComparisonScheme(): Comparisons complete! - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+[0m[32mCCCCC[0m[32m[5m[1m  COMPLETE [0m[32mXtalFinderCalculator::compareMultipleStructures(): Number of unique prototypes: 61 (out of 210 structures). - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+[0m00000  MESSAGE XtalFinderCalculator::calculatePrototypeDesignations(): Determining the AFLOW standard designation. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+[32mCCCCC[0m[32m[5m[1m  COMPLETE [0m[32mXtalFinderCalculator::writeComparisonOutputFile(): RESULTS: See ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/structure_comparison_output.json for list of unique/duplicate structures. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+[0m[32mCCCCC[0m[32m[5m[1m  COMPLETE [0m[32mXtalFinderCalculator::writeComparisonOutputFile(): RESULTS: See ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow/structure_comparison_output.out for list of unique/duplicate structures. - [dir=../0_retrieve_icsd_data/final_cifs_for_aflow/testing/2_succ_rewrite_aflow] - [thread=0/7] - [user=kyledmiller] - [host=LappyIV] - [PID=4577] - [date=Thu Jan 19 14:58:20 2023] - [aflow_compare_structure_function.cpp]
+[0mElapsed time: 0 days 00 hr 01 min 13 sec

@@ -1,0 +1,8 @@
+Finished work in /home/kdmiller/Projects/storage/datasets/mat-hack/cifs_icsd_all/
+Parallel time = 0.5 minutes
+Finished work in ../../storage/datasets/mat-hack/test/
+Parallel time = 0.0 minutes
+Finished work in ../0_retrieve_icsd_data/final_cifs_for_aflow/testing/
+Parallel time = 0.1 minutes
+Finished work in ../0_retrieve_icsd_data/final_cifs_for_aflow/
+Parallel time = 33.7 minutes
