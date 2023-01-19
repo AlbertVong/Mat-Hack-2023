@@ -71,7 +71,6 @@ Collection_Code,Formula,Prototype
 611500,TiAs2,TiAs2
 651124,TbS2,PrOI
 607362,ErAl2,Laves(cub)#MgCu2
-88199,D2Mg,PbO2#Fe2N.94
 89293,SiO2,Quartz(high)#SiO2
 56829,EuBr2,SrBr2
 29025,EuF2,Fluorite#CaF2
@@ -84,7 +83,6 @@ Collection_Code,Formula,Prototype
 613465,Cr2B,Mg2Cu
 44593,TbB2,AlB2
 24267,Ag2Te,Ag2Te
-81426,D2Sr,Cotunnite#PbCl2
 18011,SrCl2,Fluorite#CaF2
 82649,UTe2,UTe2
 607821,GdAl2,Laves(cub)#MgCu2
@@ -173,7 +171,6 @@ Collection_Code,Formula,Prototype
 42531,Co2B,CuAl2
 248523,CaSi2,EuGe2#PtTe2
 643859,UMn2,Laves(cub)#MgCu2
-122742,D2O,H2O(Ih)
 39168,TiO2,Rutile#TiO2
 68441,Ag2F,Ag2F
 103767,LaGa2,AlB2
@@ -514,7 +511,6 @@ Collection_Code,Formula,Prototype
 89292,SiO2,Quartz(high)#SiO2
 24266,PbI2,CdI2(hR6)
 629934,DyMn2,Laves(cub)#MgCu2
-19681,D2O,H2O(Ic)
 77158,Mo2C,hcp(filled)#Nb2N
 603677,PtSe2,BaSi2#EuGe2
 30213,CaAl2,Laves(cub)#MgCu2
@@ -585,7 +581,6 @@ Collection_Code,Formula,Prototype
 244050,MoO2,MoO2#VO2
 423290,La2Sb,La2Sb
 31696,BeCl2,SiS2(Ibam)
-18210,D2Mg,Rutile#TiO2
 196804,ZrTe2,CdI2(hP3)
 629063,Cu2Se,SmF2
 108584,Mg2Si,Fluorite#CaF2
@@ -676,7 +671,6 @@ Collection_Code,Formula,Prototype
 36489,CdI2,CdI2(hP42)
 254733,AgF2,AgF2
 42308,CdI2,CdI2(hP57)
-81425,D2Ca,Cotunnite#PbCl2
 626152,HfCr2,Laves(2H)#MgZn2
 647590,UO2,Fluorite#CaF2
 84575,RuO2,Rutile#TiO2
@@ -718,7 +712,6 @@ Collection_Code,Formula,Prototype
 150506,SmGe2,ThSi2
 630903,ErOs2,Laves(2H)#MgZn2
 647553,TiO2,Rutile#TiO2
-107338,D2O,H2O(Ih)
 9193,CdI2,CdI2(hP24)
 44792,CdI2,CdI2(hP12)
 759779,MgF2,CaCl2
@@ -1045,7 +1038,6 @@ Collection_Code,Formula,Prototype
 81381,SiO2,SiO2(mS24)
 621199,CeGe2,ThSi2
 24729,BaO2,KO2
-52867,D2Ce,Fluorite#CaF2
 679494,CeO2,Fluorite#CaF2
 198431,LaRu2,Laves(cub)#MgCu2
 197702,PuAl2,Laves(cub)#MgCu2
@@ -1755,7 +1747,6 @@ Collection_Code,Formula,Prototype
 638183,HfV2,MgCu2(filled)-frame
 259946,VSb2,CuAl2
 41388,PtS2,BaSi2#EuGe2
-653722,DV2,2-V2D
 650203,YRe2,Laves(2H)#MgZn2
 609376,SmAl2,Laves(cub)#MgCu2
 25632,SiO2,SiS2(Ibam)
@@ -2078,7 +2069,6 @@ Collection_Code,Formula,Prototype
 36263,MoO2,MoO2#VO2
 656539,ZrH2,ThH2
 43617,TiSe2,CdI2(hP3)
-88200,D2Mg,Rutile#TiO2
 621982,CeRu2,Laves(cub)#MgCu2
 292001,HoGa2,AlB2
 168673,TbSn2,ZrSi2
@@ -2196,7 +2186,6 @@ Collection_Code,Formula,Prototype
 23530,Sr2N,Sr2N
 649747,Te2Pt,EuGe2#PtTe2
 158363,SnPd2,Co2Si
-1090,D2Ca,Cotunnite#PbCl2
 625689,ZrCo2,Laves(cub)#MgCu2
 37223,P2W,MoP2
 105070,MoPt2,MoPt2
@@ -2349,7 +2338,6 @@ Collection_Code,Formula,Prototype
 609674,YbAl2,Laves(cub)#MgCu2
 637942,SrGe2,BaSi2(oP24)
 650701,TbRu2,Laves(2H)#MgZn2
-156881,D2Ca,Cotunnite#PbCl2
 122866,Mg2Si,Fluorite#CaF2
 230564,CaGe2,ZrCl(filled)#SmSI
 67665,ClO2,ClO2
@@ -2409,10 +2397,8 @@ Collection_Code,Formula,Prototype
 42220,CdI2,CdI2(hP27)
 609099,PrAl2,Laves(cub)#MgCu2
 647490,TaO2,NbO2
-247667,D2Er,Fluorite#CaF2
 259459,SnO2,Rutile#TiO2
 625567,YCo2,Laves(cub)#MgCu2
-247673,D2Er,Fluorite#CaF2
 652937,TaZn2,Laves(2H)#MgZn2
 103937,PuGa2,AlB2
 72491,Mg2Ru,Mg2RuHx-frame
@@ -2470,7 +2456,6 @@ Collection_Code,Formula,Prototype
 258545,Mg2Sn,Fluorite#CaF2
 647692,ZrO2,Zirconia#ZrO2(HT)
 73599,Si2W,AlCr2#MoSi2
-90164,D2Zr,ThH2
 631062,ErS2,PrOI
 56057,HoH2,Fluorite#CaF2
 76387,Nb2N,hcp(filled)#Nb2N
@@ -2598,7 +2583,6 @@ Collection_Code,Formula,Prototype
 644167,MoPt2,MoPt2
 254183,VO2,CrPS4
 652936,TaZn2,Laves(4H)#MgNi2
-247672,D2Er,Fluorite#CaF2
 201141,NO2,N2O4
 638537,YH2,Fluorite#CaF2
 42235,CdI2,CdI2(hP36)
@@ -2673,7 +2657,6 @@ Collection_Code,Formula,Prototype
 20249,HoSi2,AlB2
 199029,VSi2,CrSi2
 155351,GdO2,YOOH
-181666,D2Zr,Fluorite#CaF2
 198337,HfFe2,Laves(2H)#MgZn2
 154729,NdCo2,Laves(cub)#MgCu2
 67664,ClO2,ClO2
@@ -2833,7 +2816,6 @@ Collection_Code,Formula,Prototype
 649051,Ti2Pd,CuZr2
 616555,Ce2Bi,La2Sb
 606746,AlCr2,AlCr2#MoSi2
-28415,D2O,"H2O(III,IX)"
 239999,EuO2,YOOH
 77111,Bi2Pt,Pyrite#FeS2(cP12)
 180778,ClO2,ClO2
@@ -2904,9 +2886,7 @@ Collection_Code,Formula,Prototype
 122865,Mg2Si,Fluorite#CaF2
 67666,ClO2,ClO2
 77313,FeGe2,CuAl2
-181664,D2Zr,ThH2
 609677,YbAl2,Laves(cub)#MgCu2
-156882,D2Ca,Cotunnite#PbCl2
 108068,NbB2,AlB2
 195639,MgZr2,MgZr2H6
 647530,ThO2,Fluorite#CaF2
@@ -2939,7 +2919,6 @@ Collection_Code,Formula,Prototype
 44646,In2Se,TiAs2
 638535,YH2,Fluorite#CaF2
 643187,MnO2,Rutile#TiO2
-247670,D2Er,Fluorite#CaF2
 108861,RuO2,Rutile#TiO2
 15409,TiO2,Brookite#TiO2
 52742,BkH2,Fluorite#CaF2
@@ -3045,7 +3024,6 @@ Collection_Code,Formula,Prototype
 182027,Li2O,Li2O
 640883,IrO2,Rutile#TiO2
 72647,NbS2,NbS2(SmS)1.19_misfit(NbS2_part)
-49809,D2O,H2O(VIII)
 180156,HoMn2,MgCu2(filled)-frame
 44492,ZrB2,AlB2
 629834,DyHg2,Cd2Ce
@@ -3173,7 +3151,6 @@ Collection_Code,Formula,Prototype
 42550,Tl2S,Tl2S
 631510,Eu2Pb,Co2Si
 72493,Mg2Ru,Mg2RuHx-frame
-247671,D2Er,Fluorite#CaF2
 42578,As2Ru,Marcasite#FeS2(oP6)
 202305,UC2,CaC2-I(I4/mmm)
 108690,PrRu2,Laves(cub)#MgCu2
@@ -3218,7 +3195,6 @@ Collection_Code,Formula,Prototype
 37050,SrI2,SrI2
 647519,TeO2,TeO2
 649534,PtS2,BaSi2#EuGe2
-181665,D2Zr,Fluorite#CaF2
 197007,HfSi2,ZrSi2
 623921,In2Co,Mg2Cu
 403485,ZrO2,Baddeleyite#ZrO2(mP12)
@@ -3443,7 +3419,6 @@ Collection_Code,Formula,Prototype
 22303,VO2,MnO2
 100343,SiO2,Quartz(low)#SiO2
 122874,Mg2Sn,Fluorite#CaF2
-163196,D2Mg,Rutile#TiO2
 101075,CoO2,Brucite#Mg(OH)2
 185375,BaSi2,BaSi2(oP24)
 650713,Te2Ru,Marcasite#FeS2(oP6)
@@ -3471,7 +3446,6 @@ Collection_Code,Formula,Prototype
 166603,SiO2,Quartz(low)#SiO2
 625207,SmCo2,Laves(cub)#MgCu2
 197188,VNi2,MoPt2
-16677,D2O,H2O(Ih)
 629429,YCu2,CeCu2
 42226,CdI2,CdI2(hP30)
 42540,CoSe2,Marcasite#FeS2(oP6)
@@ -3600,7 +3574,6 @@ Collection_Code,Formula,Prototype
 25726,Co2P,TiNiSi#MgSrSi
 87387,SmI2,SrI2
 657478,ZrTe2,CdI2(hP3)
-160925,D2Ti,Fluorite#CaF2
 616342,Be2Mo,Laves(2H)#MgZn2
 659333,Te2Au,EuGe2#PtTe2
 173959,ZrO2,Baddeleyite#ZrO2(mP12)
@@ -4002,7 +3975,6 @@ Collection_Code,Formula,Prototype
 58490,In2Au,Fluorite#CaF2
 77315,NbGe2,CrSi2
 198333,NdGe2,ThSi2
-181662,D2Zr,ThH2
 619462,CaO2,CaC2-I(I4/mmm)
 109358,Pu2Co,ZrNiAl#Mg2In
 641609,LaOs2,Laves(2H)#MgZn2
@@ -4048,7 +4020,6 @@ Collection_Code,Formula,Prototype
 43107,Sb2Au,Pyrite#FeS2(cP12)
 156933,ErMn2,ErMn2H2
 603599,TiSe2,CdI2(hP3)
-60912,DV2,2-V2D
 24188,Te2Ru,Pyrite#FeS2(cP12)
 156927,ErMn2,ErMn2H2
 630153,DyRh2,Laves(cub)#MgCu2
@@ -4069,7 +4040,6 @@ Collection_Code,Formula,Prototype
 603572,TaO2,Rutile#TiO2
 188068,CaO2,Brucite#Mg(OH)2
 199171,ZrS2,CdI2(hP3)
-69077,D2Sr,Cotunnite#PbCl2
 649309,PrSb2,SmSb2
 106137,TbZn2,CeCu2
 43852,CdI2,CdI2(hP3)
@@ -4309,13 +4279,11 @@ Collection_Code,Formula,Prototype
 42224,CdI2,CdI2(hP30)
 626718,CrSe2,CdI2(hP3)
 403483,ZrO2,Baddeleyite#ZrO2(mP12)
-198326,D2Tb,Fluorite#CaF2
 649240,PrRu2,Laves(cub)#MgCu2
 609664,YAl2,Laves(cub)#MgCu2
 650077,ReS2,ReSe2
 610453,FeAs2,Marcasite#FeS2(oP6)
 154738,NdCo2,NdCo2
-163194,D2Mg,Rutile#TiO2
 122876,Mg2Si,Fluorite#CaF2
 152349,DySn2,ZrSi2
 645308,NbS2,MoS2(3R)
@@ -4326,7 +4294,6 @@ Collection_Code,Formula,Prototype
 193267,TiO2,Anatase#TiO2
 641608,LaOs2,Laves(cub)#MgCu2
 647279,PbO2,Rutile#TiO2
-181663,D2Zr,ThH2
 198332,PrGe2,ThSi2
 626863,TaCr2,Laves(cub)#MgCu2
 651433,YbS2,BaS2
@@ -4502,7 +4469,6 @@ Collection_Code,Formula,Prototype
 58846,Bi2Pt,NiAs2
 20725,TbS2,CaSb2
 236849,LaC2,CaC2-I(I4/mmm)
-44738,D2Eu,Cotunnite#PbCl2
 639033,HoHg2,Cd2Ce
 650085,ScRe2,Laves(2H)#MgZn2
 428192,AsSe2,MoS2(3R)
@@ -4534,7 +4500,6 @@ Collection_Code,Formula,Prototype
 42361,YO2,Bixbyite#Mn2-xO3
 609655,YAl2,Laves(cub)#MgCu2
 637963,TaGe2,CrSi2
-638488,D2Tb,Fluorite#CaF2
 172916,TiO2,Anatase#TiO2
 67122,SiO2,Quartz(low)#SiO2
 26618,Te2Rh,BaSi2#EuGe2
@@ -4587,7 +4552,6 @@ Collection_Code,Formula,Prototype
 629340,Cu2Te,Cu2Te(HT)
 42229,CdI2,CdI2(hP33)
 75485,SiO2,Cristobalite#SiO2
-16678,D2O,H2O(Ih)
 26963,Cu2O,Cuprite#Cu2O
 42201,CdI2,"CdI2(hP24,P63mc)"
 631241,EuFe2,Laves(2H)#MgZn2
@@ -4595,7 +4559,6 @@ Collection_Code,Formula,Prototype
 92550,SiO2,Rutile#TiO2
 636248,GdRe2,Laves(2H)#MgZn2
 42567,Bi2Pt,Pyrite#FeS2(cP12)
-44102,D2O,H2O(VIII)
 42573,As2Ir,FeAsS#CoSb2
 59635,GeO2,Quartz(low)#SiO2
 257441,HeNa2,Fluorite#CaF2
@@ -4680,7 +4643,6 @@ Collection_Code,Formula,Prototype
 604013,ThMn2,Laves(2H)#MgZn2
 105624,Sr2Pb,TiNiSi#MgSrSi
 645729,NdPt2,Laves(cub)#MgCu2
-28231,D2O,H2O(II)
 615678,VB2,AlB2
 257864,TiO2,Rutile#TiO2
 280682,BaN2,CaC2-II(C12/c1)#ThC2
@@ -4697,19 +4659,16 @@ Collection_Code,Formula,Prototype
 30330,TiB2,AlB2
 631094,ErSb2,HoSb2
 24351,TiP2,Co2Si
-64775,D2O,H2O(Ic)
 32255,FeSe2,Marcasite#FeS2(oP6)
 657477,TiTe2,CdI2(hP3)
 26220,HoSb2,HoSb2
 102611,PrCo2,Laves(cub)#MgCu2
 190373,SiO2,Rutile#TiO2
 180160,HoMn2,MgCu2(filled)-frame
-64774,D2O,H2O(VII)
 24350,Hf2P,Ta2P
 171198,MnSn2,CuAl2
 76370,MoS2,MoS2(3R)
 603741,Te2Pt,EuGe2#PtTe2
-60512,DV2,2-V2D
 652268,SmSi2,GdSi1.4
 180161,HoMn2,MgCu2(filled)-frame
 29112,SiS2,SiS2(Ibam)
@@ -4814,7 +4773,6 @@ Collection_Code,Formula,Prototype
 201606,Mg2Ni,Mg2NiH4(C2/c)
 59634,GeO2,Quartz(low)#SiO2
 646962,Ti2Ni,Ti2Ni
-44103,D2O,H2O(VIII)
 291215,SiS2,SiS2
 611184,As2Pd,Pyrite#FeS2(cP12)
 42214,CdI2,CdI2(hP21)
@@ -4971,7 +4929,6 @@ Collection_Code,Formula,Prototype
 650286,RhSe2,IrS2
 639230,TbHg2,Cd2Ce
 235825,FeS2,Pyrite#FeS2(cP12)
-201558,DTa2,Ta2H(oS6)
 29933,SiO2,Moganite#SiO2
 121630,TiO2,Rutile#TiO2
 15012,FeS2,Pyrite#FeS2(cP12)
@@ -4996,7 +4953,6 @@ Collection_Code,Formula,Prototype
 56673,SnO2,Rutile#TiO2
 625633,YCo2,Laves(cub)#MgCu2
 45169,SiO2,Coesite#SiO2
-24583,D2S,Fluorite#CaF2
 648385,PrPb2,HfGa2
 634058,Fe2W,Laves(2H)#MgZn2
 30290,HgBr2,HgI2(oS12)
@@ -5054,7 +5010,6 @@ Collection_Code,Formula,Prototype
 636465,GdTe2,PrOI
 624049,LuCo2,Laves(cub)#MgCu2
 623726,ScCo2,MgCu2(filled)-frame
-98678,D2O,D2O(tI36)
 419402,RbSb2,KSb2
 648187,TaP2,MoAs2
 639018,HfZn2,Laves(4H)#MgNi2
@@ -5390,7 +5345,6 @@ Collection_Code,Formula,Prototype
 40414,SrF2,Fluorite#CaF2
 241553,SnO2,Rutile#TiO2
 71811,AlO2,Diaspore#AlO(OH)
-638501,D2Ti,ThH2
 156929,ErMn2,ErMn2H2
 24186,RuS2,Pyrite#FeS2(cP12)
 42203,CdI2,CdI2(hP30)
@@ -5524,7 +5478,6 @@ Collection_Code,Formula,Prototype
 648409,PuPb2,HfGa2
 25663,LaSi2,ThSi2
 262771,SnO2,Rutile#TiO2
-37267,D2Yb,Cotunnite#PbCl2
 643548,ScMn2,Laves(2H)#MgZn2
 198103,NiS2,Pyrite#FeS2(cP12)
 23574,Ti2O,CdI2(hP3)
@@ -5713,7 +5666,6 @@ Collection_Code,Formula,Prototype
 197744,BMo2,CuAl2
 102549,NbCo2,Laves(cub)#MgCu2
 610464,Fe2As,Cu2Sb
-44104,D2O,H2O(VIII)
 59633,GeO2,Quartz(low)#SiO2
 174226,P2Rh,FeAsS#CoSb2
 152587,TbCo2,Laves(cub)#MgCu2
@@ -5732,7 +5684,6 @@ Collection_Code,Formula,Prototype
 617280,BkO2,Fluorite#CaF2
 108689,PrRh2,Laves(cub)#MgCu2
 631521,EuPd2,Laves(cub)#MgCu2
-247668,D2Er,Fluorite#CaF2
 241219,TbCu2,CeCu2
 202452,LaI2,CuZr2
 75483,SiO2,Cristobalite#SiO2
@@ -5816,7 +5767,6 @@ Collection_Code,Formula,Prototype
 647689,ZrO2,Fluorite#CaF2
 183484,DyCu2,CeCu2
 252715,CaC2,CaC2-II(C12/c1)#ThC2
-43327,D2Zr,Fluorite#CaF2
 612878,Co2B,CuAl2
 163570,SrH2,Ni2In#Co1.75Ge
 653171,Te2W,WTe2
@@ -5832,7 +5782,6 @@ Collection_Code,Formula,Prototype
 32247,FeSe2,Marcasite#FeS2(oP6)
 646568,Si2Ni,Fluorite#CaF2
 34636,SiO2,Quartz(low)#SiO2
-96297,D2Ti,Fluorite#CaF2
 102165,CeGa2,AlB2
 644419,Si2Mo,CrSi2
 45781,ZrTe2,CdI2(hP3)
@@ -5851,7 +5800,6 @@ Collection_Code,Formula,Prototype
 68161,SiO2,Rutile#TiO2
 198067,YbRu2,Laves(2H)#MgZn2
 644425,Si2Mo,AlCr2#MoSi2
-49810,D2O,"H2O(III,IX)"
 639381,HoMg2,Laves(2H)#MgZn2
 291944,TbAl2,Laves(cub)#MgCu2
 25706,TeO2,Cristobalite#SiO2
@@ -5881,7 +5829,6 @@ Collection_Code,Formula,Prototype
 196711,W2C,hcp(filled)#Nb2N
 615657,VB2,AlB2
 61178,SiO2,Zeolite-Theta-1-frame#Si6O12
-64772,D2O,H2O(Ih)
 653170,Te2W,MoS2(4H)
 604028,HfV2,Laves(cub)#MgCu2
 26541,S2N,NS2
@@ -5972,7 +5919,6 @@ Collection_Code,Formula,Prototype
 24801,SiAs2,Pyrite#FeS2(cP12)
 609097,PrAl2,Laves(cub)#MgCu2
 643820,TiMn2,Laves(2H)#MgZn2
-247669,D2Er,Fluorite#CaF2
 41727,FeSb2,Marcasite#FeS2(oP6)
 633479,FeSe2,Marcasite#FeS2(oP6)
 246239,BaGa2,SrGa2
@@ -6126,7 +6072,6 @@ Collection_Code,Formula,Prototype
 198851,URe2,Laves(2H)#MgZn2
 56675,SnO2,CaCl2
 160898,AlB2,AlB2
-24585,D2Se,Fluorite#CaF2
 52375,As2Pt,Pyrite#FeS2(cP12)
 609491,Th2Al,CuAl2
 121634,TiO2,Anatase#TiO2
@@ -6252,7 +6197,6 @@ Collection_Code,Formula,Prototype
 77320,ThSi2,ThSi2
 198306,ZrCr2,Laves(cub)#MgCu2
 650731,ThRu2,Laves(cub)#MgCu2
-638499,D2Ti,Fluorite#CaF2
 9855,TiO2,Anatase#TiO2
 621876,CePt2,Laves(cub)#MgCu2
 107426,GdGa2,SmNiSb
@@ -6647,7 +6591,6 @@ Collection_Code,Formula,Prototype
 100610,SnS2,CdI2(hP3)
 647072,YNi2,Laves(cub)#MgCu2
 606748,AlCr2,AlCr2#MoSi2
-86858,D2O,D2O(tI36)
 94284,MgF2,PdF2(cP12)
 643214,Mn2P,ZrNiAl#Fe2P
 634088,YFe2,Laves(cub)#MgCu2
@@ -6737,7 +6680,6 @@ Collection_Code,Formula,Prototype
 197279,HfSn2,CrSi2
 651663,ThSb2,PrOI
 195308,HfSe2,CdI2(hP3)
-62561,D2Ba,Cotunnite#PbCl2
 614,GeSe2,GeS2(HT)
 246856,Fe2P,ZrNiAl#Fe2P
 102706,Ti2Co,Laves(cub)#MgCu2
@@ -6753,7 +6695,6 @@ Collection_Code,Formula,Prototype
 106789,Ho2In,Ni2In#Co1.75Ge
 611904,GdAu2,AlCr2#MoSi2
 8244,NbO2,NbO2
-246315,D2Mg,Rutile#TiO2
 415270,PbO2,PbO2#Fe2N.94
 259235,SmFe2,NdCo2
 55124,Rb2Te,Ni2In#Co1.75Ge
@@ -6775,7 +6716,6 @@ Collection_Code,Formula,Prototype
 612216,Nd2Au,Co2Si
 759773,MnO2,CaCl2
 108001,NaAu2,Laves(cub)#MgCu2
-23703,D2O,H2O(II)
 151174,GaAg2,ZrNiAl#Mg2In
 640544,Sm2In,Ni2In#Co1.75Ge
 649206,PrPt2,Laves(cub)#MgCu2
@@ -7092,7 +7032,6 @@ Collection_Code,Formula,Prototype
 35969,PbO2,CaCl2
 292031,YFe2,Laves(cub)#MgCu2
 622263,CeTe2,PrOI
-61486,DTa2,Ta2H(oS6)
 158780,TiO2,PbO2#Fe2N.94
 609780,AmO2,Fluorite#CaF2
 158958,SiO2,PdF2(cP12)
@@ -7157,7 +7096,6 @@ Collection_Code,Formula,Prototype
 625478,TiCo2,Laves(cub)#MgCu2
 259234,SmFe2,TbFe2
 58373,TmAg2,AlCr2#MoSi2
-246314,D2Mg,Rutile#TiO2
 26861,TiS2,CdI2(hP3)
 103196,DyHg2,CaHg2
 625691,ZrCo2,Laves(cub)#MgCu2
@@ -7228,7 +7166,6 @@ Collection_Code,Formula,Prototype
 19891,TiSi2,TiSi2
 650581,RuS2,Pyrite#FeS2(cP12)
 169629,TiO2,Rutile#TiO2
-56176,D2Tb,Fluorite#CaF2
 169601,TiH2,Fluorite#CaF2
 86141,TaTe2,NbTe2
 649946,PuSb2,SmSb2
@@ -7279,12 +7216,10 @@ Collection_Code,Formula,Prototype
 391328,Fe2B,CuAl2
 605966,YbAg2,AlCr2#MoSi2
 58365,TbAg2,AlCr2#MoSi2
-629532,D2V,Fluorite#CaF2
 42329,Mn2As,Cu2Sb
 650783,YbRu2,Laves(2H)#MgZn2
 613876,Fe2B,CuAl2
 26863,TiTe2,CdI2(hP3)
-246316,D2Mg,Rutile#TiO2
 104823,LuRh2,Laves(cub)#MgCu2
 105283,NdRh2,Laves(cub)#MgCu2
 5005,V2C,CdI2(hP3)
@@ -7597,7 +7532,6 @@ Collection_Code,Formula,Prototype
 46006,MgZn2,Laves(2H)#MgZn2
 201114,PbF2,Fluorite#CaF2
 247141,SiO2,Quartz(low)#SiO2
-16631,D2Yb,Cotunnite#PbCl2
 96025,VSi2,CrSi2
 87128,Fe2C,Fe2C
 161894,NiO2,Brucite#Mg(OH)2
@@ -7863,7 +7797,6 @@ Collection_Code,Formula,Prototype
 105279,NdPt2,Laves(cub)#MgCu2
 645374,NbSe2,NbS2(hP6)
 14195,SnF2,Cristobalite#SiO2
-90295,D2Eu,Cotunnite#PbCl2
 759749,SnO2,CaCl2
 154036,TiO2,Baddeleyite#ZrO2(mP12)
 104601,YIr2,Laves(cub)#MgCu2
@@ -8152,7 +8085,6 @@ Collection_Code,Formula,Prototype
 230521,ZrB2,AlB2
 42488,US2,Cotunnite#PbCl2
 195131,FeGe2,CuAl2
-23704,D2O,"H2O(III,IX)"
 198373,FeS2,Pyrite#FeS2(cP12)
 197040,HfCr2,Laves(2H)#MgZn2
 759774,MgF2,CaCl2
@@ -8189,7 +8121,6 @@ Collection_Code,Formula,Prototype
 643937,ZrMn2,Laves(2H)#MgZn2
 24902,Cs2Mo,Arcanite#K2SO4
 55123,Rb2Te,Ni2In#Co1.75Ge
-201703,D2O,H2O(VIII)
 624984,CoSe2,Pyrite#FeS2(cP12)
 9161,TiO2,Rutile#TiO2
 80044,ZrO2,Baddeleyite#ZrO2(mP12)
@@ -8356,7 +8287,6 @@ Collection_Code,Formula,Prototype
 86351,CoS2,Pyrite#FeS2(cP12)
 606299,CaAl2,Laves(cub)#MgCu2
 197903,ZrW2,Laves(cub)#MgCu2
-201701,D2O,H2O(VII)
 646871,TbNi2,Laves(cub)#MgCu2
 42307,CdI2,CdI2(hP39)
 82645,UTe2,UTe2
@@ -8769,7 +8699,6 @@ Collection_Code,Formula,Prototype
 82650,UTe2,UTe2
 26858,SiS2,SiS2(Ibam)
 20597,PbF2,Fluorite#CaF2
-201700,D2O,H2O(VIII)
 605791,ScAg2,AlCr2#MoSi2
 55487,SiO2,Faujasite-frame#K92Al92Si100O384
 197255,Sn2Au,NiAs2
