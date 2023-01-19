@@ -111,6 +111,8 @@ class icsd_swagger():
 			else:
 				self.id_nums = result_string.split(' ')
 				print(f'{len(self.id_nums)} results found.')
+		else:
+			print('Other error, make sure your query text is valid.')
 
 	def custom_coll_codes(self,coll_codes):
 		try:
