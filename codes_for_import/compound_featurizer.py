@@ -1,3 +1,7 @@
+# Adapted from https://github.com/rpw199912j/mit_model_code
+# Georgescu, A. B.; Ren, P.; Toland, A. R.; Zhang, S.; Miller, K. D.; Apley, D. W.; Olivetti, E. A.; Wagner, N.; Rondinelli, J. M. Database, Features, and Machine Learning Model to Identify Thermally Driven Metal−Insulator Transition Compounds. Chem. Mater. 2021. DOI: 10.1021/acs.chemmater.1c00905.
+
+
 import difflib
 import itertools
 import numpy as np
@@ -8,86 +12,278 @@ from tqdm.auto import tqdm
 from collections import OrderedDict
 from typing import Union, Iterable, Tuple, Dict, List
 from pymatgen.analysis.ewald import EwaldSummation
-from matminer.featurizers.conversions import StrToComposition, CompositionToOxidComposition, StructureToOxidStructure
+from pymatgen.analysis.local_env import CrystalNN
+from pymatgen.core.composition import Composition
+from matminer.featurizers.conversions import StrToComposition, CompositionToOxidComposition, StructureToOxidStructure, StructureToComposition
 from matminer.featurizers.composition import ElementProperty, OxidationStates
 from matminer.featurizers.structure import EwaldEnergy, GlobalInstabilityIndex, StructuralHeterogeneity
+from matminer.featurizers.base import BaseFeaturizer
+from math import gcd
+from functools import reduce
+import multiprocessing as mp
 
+
+### Custom GII using CrystalNN
+class customGII(BaseFeaturizer):
+    """
+    The global instability index of a structure
+    Args:
+        nn_method: 'CrystalNN'
+    Features:
+        The global instability index is the square root of the sum of squared
+            differences of the bond valence sums from the formal valences
+            averaged over all atoms in the unit cell.
+    """
+
+    def __init__(self, nn_algo='crystal', r_cut=4.0, verbose=False, n_jobs=mp.cpu_count()-1):
+        self.parent_gii = GlobalInstabilityIndex()
+        self.bv_values = self.parent_gii.bv_values
+        self.r_cut = r_cut
+        self.nn_algo = nn_algo
+        self.verbose = verbose
+        self.set_n_jobs(n_jobs)
+        
+    
+    def featurize(self, struc):
+        return [self.calc_gii(struc, nn_algo=self.nn_algo, verbose=self.verbose)]
+
+    
+    def get_equiv_sites(self, s, site):
+        return self.parent_gii.get_equiv_sites(s, site)
+
+    
+    def get_bv_params(cation, anion, cat_val, an_val):
+        return self.parent_gii.get_bv_params(cation, anion, cat_val, an_val)
+    
+    
+    def calc_bv_sum(self, site_val, site_el, neighbor_list):
+        return self.parent_gii.calc_bv_sum(site_val, site_el, neighbor_list)
+    
+    
+    def smart_get_bv_params(self, ion1, ion2, oxi1, oxi2):
+        if oxi1 * oxi2 > 0: raise ValueError("Ions have the same polarity")
+        if oxi1 > 0:
+            return self.get_bv_params(ion1, ion2, oxi1, oxi2)
+        else:
+            return self.get_bv_params(ion2, ion1, oxi2, oxi1)
+
+    
+    def has_ionic_pair(self, struc, neighbor_lists):
+        """Return whether or not there is at least one cation-anion pair in the provided list of tuples"""
+        for site, neighbor_list in zip(struc, neighbor_lists):
+            if len(neighbor_list) < 1: break
+            oxi_signs = set([np.sign(site.species.elements[0].oxi_state)] + [np.sign(neighbor.species.elements[0].oxi_state) for neighbor in neighbor_list])
+            if -1 in oxi_signs and 1 in oxi_signs:
+                return True
+        return False
+    
+    
+    def calc_gii(self, s, nn_cut_coef=0, type_scaling=0, nn_algo='crystal', 
+                       identifier=None, max_n=100, verbose=False):
+        """Computes pairwise distances and accompanying BV params
+        Args:
+            s: Pymatgen Structure object
+            max_n: maximum number of atoms in structure, larger structures skipped
+            verbose: print diagnostic messages
+            max_r_cut: maximum allowed cutoff distance (r_cut increased until >0 neighbors found)
+        Returns:
+            bond_info (dict): {'Ag2O_35540.cif': {'Ag_1.0|O_-2.0': {'dists': [2.06114, 3.946784],
+               'Ro': 1.842, 'B': 0.37, 'avg_dist': 3.475373, 'range_dist': 1.885644, 
+               'diff': -1.633373, 'pct_diff': -0.8867388707926167}}
+        """
+        if not identifier:
+            identifier=s.composition
+        ### Check for valid structure
+        if not s: 
+            if verbose: print('Structure is None')
+            return np.nan
+        elements = [str(i) for i in s.composition.element_composition.elements]
+        if elements[0] == elements[-1]:
+            if verbose: print(f'{identifier}: Only one element')
+            return np.nan #raise ValueError("No oxidation states with single element.")
+
+        ### Check for ionicity
+        valences = [site.species.elements[0].oxi_state for site in s]
+        if not all(valences): 
+            if verbose: print(f'{identifier}: zero valence')
+            return np.nan   
+        anions = [val < 0 for val in valences]
+        cations = [val > 0 for val in valences]
+        if not (any(anions) and any(cations)):
+            if verbose: print(f'{identifier}: missing (cat/an)ion')
+            return np.nan
+
+        ### Ignore structures too large
+        if len(s) > max_n: 
+            if verbose: print(f'{identifier} has {len(s)} > {max_n} sites')
+            return np.nan
+
+        bond_valence_sums = []
+        bond_info = {}
+        cutoff = self.r_cut
+
+        ### Find nearest neighbors
+        if nn_algo == 'crystal': # Use CrystalNearestNeighbor algo
+            cnn = CrystalNN(cation_anion=True)
+            try:
+                pairs = [[entry['site'] for entry in sub_list] for sub_list in cnn.get_all_nn_info(s)]
+            except Exception as e:
+                print(f'CrystalNN: {identifier}: {e}')
+                #print(s)
+                return np.nan
+
+        elif nn_algo == 'default': # Flat r_cut
+            pairs = s.get_all_neighbors(r=cutoff)
+        else:
+            raise ValueError("Invalid nearest neighbor algo provided. Valid options: {default, crystal}")
+
+        ### Check for ionic pairs
+        if not self.has_ionic_pair(s, pairs):
+            if verbose: print(f'{identifier} has no neighbors within {cutoff}')
+            return np.nan 
+
+        ### Calculate bond info
+        site_val_sums = {}  # Cache bond valence deviations
+        for i, neighbor_list in enumerate(pairs):
+            site = s[i]
+            try: equivs = self.get_equiv_sites(s, site)
+            except Exception as e: 
+                if verbose: print(f'{identifier}: symmetry analysis failed, {e}')
+                return np.nan
+            flag = False
+            # If symm. identical site has cached bond valence sum difference,
+            # use it to avoid unnecessary calculations
+            for item in equivs:
+                if item in site_val_sums:
+                    bond_valence_sums.append(site_val_sums[item])
+                    site_val_sums[site] = site_val_sums[item]
+                    flag = True
+                    break
+            if flag:
+                continue
+            site_val = site.species.elements[0].oxi_state
+            site_el = str(site.species.element_composition.elements[0])
+            try:
+                bvs = self.calc_bv_sum(site_val, site_el, neighbor_list)
+                #print(f'{site_el}_{site_val} bvs = {bvs}')
+                site_val_sums[site] = bvs - site_val
+            except Exception as e:
+                if verbose: print(f'{identifier}: {site_el}{site_val}\tException: {e}')
+                return np.nan
+        return np.linalg.norm(list(site_val_sums.values())) / np.sqrt(len(site_val_sums)) 
+
+    
+    def feature_labels(self):
+        return ["gii"]
+
+    def implementors(self):
+        return ["Nicholas Wagner", "Nenian Charles", "Alex Dunn", "Kyle Miller"]
+
+    def citations(self):
+        return [
+            "@article{PhysRevB.87.184115,"
+            "title = {Structural characterization of R2BaCuO5 (R = Y, Lu, Yb, Tm, Er, Ho,"
+            " Dy, Gd, Eu and Sm) oxides by X-ray and neutron diffraction},"
+            "author = {Salinas-Sanchez, A. and Garcia-Muñoz, J.L. and Rodriguez-Carvajal, "
+            "J. and Saez-Puche, R. and Martinez, J.L.},"
+            "journal = {Journal of Solid State Chemistry},"
+            "volume = {100},"
+            "issue = {2},"
+            "pages = {201-211},"
+            "year = {1992},"
+            "doi = {10.1016/0022-4596(92)90094-C},"
+            "url = {https://doi.org/10.1016/0022-4596(92)90094-C}}",
+            "@article{doi:10.1021/acs.inorgchem.0c02996,"
+            "author = {Pan, Hillary and Ganose, Alex M. and Horton, Matthew and Aykol, Muratahan and Persson, Kristin A. and Zimmermann, Nils E. R. and Jain, Anubhav},"
+            "title = {Benchmarking Coordination Number Prediction Algorithms on Inorganic Crystal Structures},"
+            "journal = {Inorganic Chemistry},"
+            "volume = {60},"
+            "number = {3},"
+            "pages = {1590-1603},"
+            "year = {2021},"
+            "doi = {10.1021/acs.inorgchem.0c02996},"
+            "URL = {https://doi.org/10.1021/acs.inorgchem.0c02996}}"]
+    
+
+def find_gcd(list):
+    x = reduce(gcd, list)
+    return x
 
 # %%
-def generate_formula_from_structure_helper(filepath: str, label: int):
-    """
-    The helper function for generate_formula_from_structure()
-    Generate formula and assign class label from a given cif file
+# def generate_formula_from_structure_helper(filepath: str, label: int):
+#     """
+#     The helper function for generate_formula_from_structure()
+#     Generate formula and assign class label from a given cif file
 
-    :param filepath: String, the filepath of the cif structure file
-    :param label: Integer, 0 for Metal; 1 for Insulator; 2 for MIT
-    :return: Dictionary, a dictionary containing the compound formula, label and filepath
-    """
-    # read in the cif file
-    struct = mg.Structure.from_file(filepath)
-    # get the reduced formula
-    formula = struct.composition.reduced_formula
-    # construct a row with compound formula, label, filepath and Pymatgen structure object
-    return {"Compound": formula, "Label": label, "struct_file_path": filepath, "structure": struct}
-
-
-def generate_formula_from_structure():
-    """Return a Pandas DataFrame with each row having the compound formula, label and filepath"""
-    subfolder_lst = ["../data/Structures/Metals/*.cif",
-                     "../data/Structures/Insulators/*.cif",
-                     "../data/Structures/MIT_materials/*/*.cif"]
-
-    # get all the filepaths in each subfolder
-    cif_files = [file for subfolder in subfolder_lst for file in glob(subfolder)]
-    # form a list of class labels, each class label should repeat for the number of compounds in each class
-    labels = [class_label for class_label in [0, 1, 2]
-              for _ in range(len(glob(subfolder_lst[class_label])))]
-    # generate a list of dictionaries, with each dictionary corresponding to one compound
-    data_dict = [generate_formula_from_structure_helper(cif_file, label)
-                 for cif_file, label in zip(cif_files, labels)]
-
-    return pd.DataFrame(data_dict)
+#     :param filepath: String, the filepath of the cif structure file
+#     :param label: Integer, 0 for Metal; 1 for Insulator; 2 for MIT
+#     :return: Dictionary, a dictionary containing the compound formula, label and filepath
+#     """
+#     # read in the cif file
+#     struct = mg.core.Structure.from_file(filepath)
+#     # get the reduced formula
+#     formula = struct.composition.reduced_formula
+#     # construct a row with compound formula, label, filepath and Pymatgen structure object
+#     return {"Compound": formula, "Label": label, "struct_file_path": filepath, "structure": struct}
 
 
-def get_struct(compound_formula: str, df_input: pd.DataFrame, struct_type: str = "structure") -> mg.Structure:
-    """
-    Return the Pymatgen structure of the given compound.
+# def generate_formula_from_structure():
+#     """Return a Pandas DataFrame with each row having the compound formula, label and filepath"""
+#     subfolder_lst = ["../data/Structures/Metals/*.cif",
+#                      "../data/Structures/Insulators/*.cif",
+#                      "../data/Structures/MIT_materials/*/*.cif"]
 
-    :param compound_formula: String, the compound's chemical formula
-    :param df_input: Pandas DataFrame, the dataframe where the structure is stored
-    :param struct_type: String, "structure" or "structure_oxid"
-    :return: Pymatgen structure
-    """
-    try:
-        struct_output = df_input.loc[df_input.Compound == compound_formula, struct_type].values[0]
-    # if the formula has no exact in the input dataframe,
-    # return an error message along with the closest matches if there is any
-    except IndexError:
-        raise Exception("The structure does not exist in this dataframe. The closest matches are {}.".
-                        format(difflib.get_close_matches(compound_formula, df_input.Compound)))
-    return struct_output
+#     # get all the filepaths in each subfolder
+#     cif_files = [file for subfolder in subfolder_lst for file in glob(subfolder)]
+#     # form a list of class labels, each class label should repeat for the number of compounds in each class
+#     labels = [class_label for class_label in [0, 1, 2]
+#               for _ in range(len(glob(subfolder_lst[class_label])))]
+#     # generate a list of dictionaries, with each dictionary corresponding to one compound
+#     data_dict = [generate_formula_from_structure_helper(cif_file, label)
+#                  for cif_file, label in zip(cif_files, labels)]
+
+#     return pd.DataFrame(data_dict)
 
 
-# helper function to read in new data that may not present in the original data set
-def read_new_struct(structure: Union[str, mg.Structure], supercell_matrix=None):
-    """
-    Read in new structure data and return an initial Pandas DataFrame
+# def get_struct(compound_formula: str, df_input: pd.DataFrame, struct_type: str = "structure") -> mg.core.Structure:
+#     """
+#     Return the Pymatgen structure of the given compound.
 
-    :param structure: String, structure file path or Pymatgen Structure
-    :param supercell_matrix: List, the list or matrix based on which to make the supercell
-    :return: Pandas DataFrame
-    """
-    if isinstance(structure, str):
-        struct = mg.Structure.from_file(structure)
-    elif isinstance(structure, mg.Structure):
-        struct = structure
+#     :param compound_formula: String, the compound's chemical formula
+#     :param df_input: Pandas DataFrame, the dataframe where the structure is stored
+#     :param struct_type: String, "structure" or "structure_oxid"
+#     :return: Pymatgen structure
+#     """
+#     try:
+#         struct_output = df_input.loc[df_input.Compound == compound_formula, struct_type].values[0]
+#     # if the formula has no exact in the input dataframe,
+#     # return an error message along with the closest matches if there is any
+#     except IndexError:
+#         raise Exception("The structure does not exist in this dataframe. The closest matches are {}.".
+#                         format(difflib.get_close_matches(compound_formula, df_input.Compound)))
+#     return struct_output
 
-    if supercell_matrix:
-        struct.make_supercell(supercell_matrix)
 
-    formula = struct.composition.reduced_formula
-    compound_dict = {"Compound": formula, "structure": struct}
-    return pd.DataFrame([compound_dict])
+# # helper function to read in new data that may not present in the original data set
+# def read_new_struct(structure: Union[str, mg.core.Structure], supercell_matrix=None):
+#     """
+#     Read in new structure data and return an initial Pandas DataFrame
+
+#     :param structure: String, structure file path or Pymatgen Structure
+#     :param supercell_matrix: List, the list or matrix based on which to make the supercell
+#     :return: Pandas DataFrame
+#     """
+#     if isinstance(structure, str):
+#         struct = mg.core.Structure.from_file(structure)
+#     elif isinstance(structure, mg.core.Structure):
+#         struct = structure
+
+#     if supercell_matrix:
+#         struct.make_supercell(supercell_matrix)
+
+#     formula = struct.composition.reduced_formula
+#     compound_dict = {"Compound": formula, "structure": struct}
+#     return pd.DataFrame([compound_dict])
 
 
 def correct_comp_oxid(df_input: pd.DataFrame) -> pd.DataFrame:
@@ -110,55 +306,190 @@ def check_if_all_zero_oxi_states(comp_oxid):
     return False
 
 
-# %% generate composition based features
+def type_sym_to_indiv(index, type_list):
+    """Convert type at index in type_list into singular feature (atomic symbol)
+    """
+    if index < len(type_list): return str(type_list[index])
+    else:                       return ''
+
+    
+def type_oxi_to_indiv(index, type_list):
+    """Convert oxi state at index in type_list into singular feature (oxi state)
+    """
+    if index < len(type_list): return float(type_list[index])
+    else:                       return np.nan
+
+
+def type_featurizer(df_input: pd.DataFrame) -> pd.DataFrame:
+    """Return a Pandas Dataframe with per-species features (requires type_sym, type_oxi columns)
+    """
+    df_out = df_input.copy()
+    
+    ### Split type symbols and oxi into individual features
+    max_n = max([len(type_sym) for type_sym in df_out.type_sym])
+    #print(f'max_n = {max_n}')
+    for i in range(max_n):
+        df_out[f'type{i}_sym'] = [type_sym_to_indiv(i, type_sym) for type_sym in df_out.type_sym]
+        df_out[f'type{i}_oxi'] = [type_oxi_to_indiv(i, type_oxi) for type_oxi in df_out.type_oxi]
+        df_out[f'type{i}_comp'] = [Composition(sym) for sym in df_out[f'type{i}_sym']]
+        ep_featurizer = ElementProperty.from_preset(preset_name="magpie")
+        ep_df = ep_featurizer.featurize_dataframe(df_out[[f'type{i}_comp']], col_id=f'type{i}_comp', ignore_errors=True, pbar=True)
+        # Just pick out the mode for each feature since there's only one species per type
+        # This is roundabout and inefficient but it's easy 
+        for feature in ep_featurizer.feature_labels():
+            if feature[:15] == 'MagpieData mode':
+                df_out[f'type{i}_{feature[16:]}'] = ep_df[feature]
+    return df_out
+        
+
 def composition_featurizer(df_input: pd.DataFrame, **kwargs) -> pd.DataFrame:
     """Return a Pandas DataFrame with all compositional features"""
 
     # generate the "composition" column
-    df_comp = StrToComposition().featurize_dataframe(df_input, col_id="Compound")
+    if 'composition' in df_input: 
+        df_comp = df_input.copy()
+    elif 'comp' in df_input:
+        df_comp = df_input.copy()
+        df_comp['composition'] = df_comp['comp']
+    else:
+        df_comp = StrToComposition().featurize_dataframe(df_input, col_id="Compound", pbar=True)
     # generate features based on elemental properites
     ep_featurizer = ElementProperty.from_preset(preset_name="magpie")
-    ep_featurizer.featurize_dataframe(df_comp, col_id="composition", inplace=True)
+    ep_featurizer.featurize_dataframe(df_comp, col_id="composition", inplace=True, pbar=True)
     # generate the "composition_oxid" column based on guessed oxidation states
-    CompositionToOxidComposition(return_original_on_error=True, **kwargs).featurize_dataframe(
-        # ignore errors from non-integer stoichiometries
-        df_comp, "composition", ignore_errors=True, inplace=True
-    )
+    if not 'composition_oxid' in df_comp:
+        CompositionToOxidComposition(return_original_on_error=True, **kwargs).featurize_dataframe(
+            # ignore errors from non-integer stoichiometries
+            df_comp, "composition", ignore_errors=True, inplace=True, pbar=True
+        )
     # correct oxidation states
-    df_comp = correct_comp_oxid(df_comp)
+#     df_comp = correct_comp_oxid(df_comp)
     # generate features based on oxidation states
     os_featurizer = OxidationStates()
-    os_featurizer.featurize_dataframe(df_comp, "composition_oxid", ignore_errors=True, inplace=True)
+    os_featurizer.featurize_dataframe(df_comp, "composition_oxid", ignore_errors=True, inplace=True, pbar=True)
     # remove compounds with predicted oxidation states of 0
+#     return df_comp[df_comp["minimum oxidation state"] != 0]
     return df_comp[df_comp["minimum oxidation state"] != 0]
 
 
+# # %% generate structure based features
+# def structure_featurizer(df_input: pd.DataFrame, **kwargs) -> pd.DataFrame:
+#     """Return a Pandas DataFrame with all structural features"""
+
+#     # generate the "structure_oxid" column
+#     df_struct = StructureToOxidStructure(**kwargs).featurize_dataframe(df_input, col_id="structure",
+#                                                                        ignore_errors=True)
+#     # generate features based on EwaldEnergy
+#     ee_featurizer = EwaldEnergy()
+#     ee_featurizer.featurize_dataframe(df_struct, col_id="structure_oxid",
+#                                       ignore_errors=True, inplace=True)
+#     # generate features based on the variance in bond lengths and atomic volumes (slow to run)
+#     sh_featurizer = StructuralHeterogeneity()
+#     sh_featurizer.featurize_dataframe(df_struct, col_id="structure",
+#                                       ignore_errors=True, inplace=True)
+#     # calculate global instability index
+#     gii_featurizer = GlobalInstabilityIndex()
+#     gii_featurizer.featurize_dataframe(df_struct, col_id="structure_oxid",
+#                                        ignore_errors=True, inplace=True)
+#     # rename the column from "global instability index" to "gii"
+#     df_struct.rename(columns={"global instability index": "gii"}, inplace=True)
+#     return df_struct
+
+
+def structureToOxidComp(structure):
+    """Convert struc w/ oxi states to composition w/ oxi states"""
+    #try:
+    if not structure: 
+        print(f'\nMissing structure\n{structure}')
+        return None
+    els_have_oxi_states = [hasattr(s, "oxi_state") for s in structure.composition.elements]
+    if not all(els_have_oxi_states):
+        raise ValueError(f'Structure missing oxidation states in featurization step: {structure.composition}')
+    species, counts = np.unique(structure.species, return_counts=True)
+    gcd = find_gcd(counts)
+    counts = [count//gcd for count in counts]
+    return Composition.from_dict({s: count for s, count in zip(species, counts)})
+    #except Exception as e:
+    #    print()
+    #    print(e)
+    #    print(structure)
+    #    return None
+
+
 # %% generate structure based features
-def structure_featurizer(df_input: pd.DataFrame, **kwargs) -> pd.DataFrame:
-    """Return a Pandas DataFrame with all structural features"""
 
+def struc_oxi_featurizer(df_input: pd.DataFrame, **kwargs) -> pd.DataFrame:
+    """Return a Pandas DataFrame with structures complete with oxidation states"""
     # generate the "structure_oxid" column
-    df_struct = StructureToOxidStructure(**kwargs).featurize_dataframe(df_input, col_id="structure",
-                                                                       ignore_errors=True)
-    # generate features based on EwaldEnergy
-    ee_featurizer = EwaldEnergy()
-    ee_featurizer.featurize_dataframe(df_struct, col_id="structure_oxid",
-                                      ignore_errors=True, inplace=True)
-    # generate features based on the variance in bond lengths and atomic volumes (slow to run)
-    sh_featurizer = StructuralHeterogeneity()
-    sh_featurizer.featurize_dataframe(df_struct, col_id="structure",
-                                      ignore_errors=True, inplace=True)
-    # calculate global instability index
-    gii_featurizer = GlobalInstabilityIndex()
-    gii_featurizer.featurize_dataframe(df_struct, col_id="structure_oxid",
-                                       ignore_errors=True, inplace=True)
-    # rename the column from "global instability index" to "gii"
-    df_struct.rename(columns={"global instability index": "gii"}, inplace=True)
-    return df_struct
+    print('Featurizing: StructureToOxidStructure')
+    df_output = StructureToOxidStructure(**kwargs).featurize_dataframe(df_input, col_id="structure", ignore_errors=True, pbar=True)
+    #df_output = df_output.dropna(subset=['structure_oxid'])
+    na_free = df_output.dropna(subset=['structure_oxid'])
+    only_na = df_output[~df_output.index.isin(na_free.index)]
+    if len(only_na) > 0: 
+        print('Removing structures for which oxi state assignment failed')
+        print(f'\nStructures removed due to missing values: {len(only_na)}')
+        print(only_na.fname.to_numpy())
+    df_output = na_free
+    return df_output, only_na
 
+
+def gii_featurizer(df_input: pd.DataFrame, **kwargs) -> pd.DataFrame:
+    print('Featurizing: GII')
+    gii_featurizer = customGII(**kwargs)
+    df_output = gii_featurizer.featurize_dataframe(df_input, col_id="structure_oxid",
+                                       ignore_errors=False, pbar=True)
+    return df_output
+
+def struc_comp_featurizer(df_input: pd.DataFrame, **kwargs) -> pd.DataFrame:
+    """Return a Pandas DataFrame with structural features and compositional features
+    based on oxi states obtained from structural data""" 
+#     print(df_output.structure_oxid)
+    # generate features based on EwaldEnergy
+    print('Featurizing: EwaldEnergy')
+    ee_featurizer = EwaldEnergy()
+    df_output = ee_featurizer.featurize_dataframe(df_input, col_id="structure_oxid",
+                                      ignore_errors=True, pbar=True)
+    # generate features based on the variance in bond lengths and atomic volumes (slow to run)
+    print('Featurizing: StructuralHeterogeneity')
+    sh_featurizer = StructuralHeterogeneity()
+    sh_featurizer.featurize_dataframe(df_output, col_id="structure",
+                                      ignore_errors=True, inplace=True, pbar=True)
+    # calculate global instability index
+    print('Featurizing: GII')
+    gii_featurizer = customGII(verbose=verbose, n_jobs=n_jobs)
+    gii_featurizer.featurize_dataframe(df_output, col_id="structure_oxid",
+                                       ignore_errors=True, inplace=True, pbar=True)
+    # rename the column from "global instability index" to "gii"
+    # df_output.rename(columns={"global instability index": "gii"}, inplace=True)
+    # generate the "composition" column
+    print('Featurizing: StructureToComposition')
+    s2c_featurizer = StructureToComposition()
+    s2c_featurizer.featurize_dataframe(df_output, col_id='structure', 
+                                              ignore_errors=True, inplace=True, pbar=True)
+#     df_output = StrToComposition().featurize_dataframe(df_output, col_id="Compound")
+    # generate features based on elemental properites
+    print('Featurizing: ElementProperty')
+    ep_featurizer = ElementProperty.from_preset(preset_name="magpie")
+    ep_featurizer.featurize_dataframe(df_output, col_id="composition",
+                                      ignore_errors=True, inplace=True, pbar=True)
+    # generate the "composition_oxid" column based on guessed oxidation states
+#     df_output = StrToComposition().featurize_dataframe(df_output, col_id="Compound")
+    print('Featurizing: structureToOxidComp')
+    df_output["composition_oxid"] = [structureToOxidComp(struc) for struc in df_output.structure_oxid]
+    # correct oxidation states
+    print('Correcting oxi states')
+    df_output = correct_comp_oxid(df_output)
+    # generate features based on oxidation states
+    print('Featurizing: OxidationStates')
+    os_featurizer = OxidationStates()
+    os_featurizer.featurize_dataframe(df_output, "composition_oxid", ignore_errors=True, inplace=True, pbar=True)
+    # remove compounds with predicted oxidation states of 0
+    return df_output[df_output["minimum oxidation state"] != 0]
+    
 
 # %% generate handcrafted features
-def parse_element(structure: mg.Structure) -> Dict:
+def parse_element(structure: mg.core.Structure) -> Dict:
     """
     Group the elements into metals and non-metals,
     also pick out the metal element with the highest electronegativity
@@ -197,7 +528,7 @@ def parse_element(structure: mg.Structure) -> Dict:
 
 
 # %% Create featurizers to calculate M-X, M-M, X-X bond distance (M: metal, X: non_metal)
-def get_elem_info(structure: mg.Structure, makesupercell: bool = True) -> Tuple[Dict, Dict, mg.Structure]:
+def get_elem_info(structure: mg.core.Structure, makesupercell: bool = True) -> Tuple[Dict, Dict, mg.core.Structure]:
     """
     Helper function for calc_mx/mm/xx_distances()
     Get information on the element composition and the site indices for all element of a structure
@@ -377,7 +708,7 @@ def calc_xx_dists(structure, cutoff=1, return_unique=False):
 def parse_elem_pair(elem_pair_str: str):
     """Parse a string containing a pair of element symbol and return two Pymatgen Element objects"""
     elem_pair_str = elem_pair_str.split("-")
-    return tuple([mg.Element(elem_str) for elem_str in elem_pair_str])
+    return tuple([mg.core.Element(elem_str) for elem_str in elem_pair_str])
 
 
 # %%
@@ -446,10 +777,10 @@ def classify_mx_pairs(elem_pair_lst: Union[list, Iterable]):
         if (not elem_1.is_metal) and elem_2.is_metal:
             elem_1, elem_2 = elem_2, elem_1
         # find all pairs where the metal is a transition metal and the non-metal is oxygen
-        if elem_1.is_transition_metal and (elem_2 == mg.Element("O")):
+        if elem_1.is_transition_metal and (elem_2 == mg.core.Element("O")):
             trans_oxy.append(elem_pair_str)
         # find all pairs where one element is a transition metal or one element is oxygen
-        elif elem_1.is_transition_metal or (elem_2 == mg.Element("O")):
+        elif elem_1.is_transition_metal or (elem_2 == mg.core.Element("O")):
             one_trans_or_one_oxy.append(elem_pair_str)
         # find all pairs where the metal is non-transition metal and the non-metal is not oxygen
         else:
@@ -484,10 +815,10 @@ def classify_xx_pairs(elem_pair_lst: Union[list, Iterable]):
 
     for elem_pair_str, (elem_1, elem_2) in zip(elem_pair_lst, elem_pairs_parsed):
         # find all pairs where both non_metals are oxygen
-        if (elem_1 == mg.Element("O")) and (elem_2 == mg.Element("O")):
+        if (elem_1 == mg.core.Element("O")) and (elem_2 == mg.core.Element("O")):
             oxy_oxy.append(elem_pair_str)
         # find all pairs where one of the two non_metals is an oxygen
-        elif (elem_1 == mg.Element("O")) or (elem_2 == mg.Element("O")):
+        elif (elem_1 == mg.core.Element("O")) or (elem_2 == mg.core.Element("O")):
             oxy_non_oxy.append(elem_pair_str)
         # find all pairs where none of the two non_metals is an oxygen
         else:
@@ -532,7 +863,7 @@ def return_most_relevant_pairs(pair_clf_dictionary: OrderedDict, cumulative: int
 
 
 # %%
-def return_relevant_dists(structure_oxid: mg.Structure, calc_funcs: Tuple, cutoff_val: float = 1,
+def return_relevant_dists(structure_oxid: mg.core.Structure, calc_funcs: Tuple, cutoff_val: float = 1,
                           return_unique: bool = False, cumulative_level: int = None):
     """
     Return the most relevant metal-metal distance. e.g. only return distances between transition metals
@@ -558,23 +889,23 @@ def return_relevant_dists(structure_oxid: mg.Structure, calc_funcs: Tuple, cutof
     return np.concatenate(list(relevant_dists.values()))
 
 
-def return_relevant_mm_dists(structure_oxid: mg.Structure, **kwargs):
+def return_relevant_mm_dists(structure_oxid: mg.core.Structure, **kwargs):
     """A wrapper function around the generic return_relevant_dists() to only calculate metal-metal distances"""
     return return_relevant_dists(structure_oxid, (calc_mm_dists, classify_mm_pairs), **kwargs)
 
 
-def return_relevant_mx_dists(structure_oxid: mg.Structure, **kwargs):
+def return_relevant_mx_dists(structure_oxid: mg.core.Structure, **kwargs):
     """A wrapper function around the generic return_relevant_dists() to only calculate metal-non_metal distances"""
     return return_relevant_dists(structure_oxid, (calc_mx_dists, classify_mx_pairs), **kwargs)
 
 
-def return_relevant_xx_dists(structure_oxid: mg.Structure, **kwargs):
+def return_relevant_xx_dists(structure_oxid: mg.core.Structure, **kwargs):
     """A wrapper function around the generic return_relevant_dists() to only calculate non_metal-non_metal distances"""
     return return_relevant_dists(structure_oxid, (calc_xx_dists, classify_xx_pairs), **kwargs)
 
 
 # %% calculate the maximum Madelung potential for each element in a structure
-def calc_elem_max_potential(structure_oxid: mg.Structure, full_list=False, check_vesta=False):
+def calc_elem_max_potential(structure_oxid: mg.core.Structure, full_list=False, check_vesta=False):
     """
     Return the maximum Madelung potential for all elements in a structure.
 
@@ -627,7 +958,7 @@ def choose_most_elec_neg_potential(elem_lst, potential_dict):
 
 
 # %%
-def return_relevant_potentials(structure_oxid: mg.Structure, **kwargs):
+def return_relevant_potentials(structure_oxid: mg.core.Structure, **kwargs):
     """
     Return the relevant potentials for the metal site and non_metal site with the following relevance order
 
@@ -660,7 +991,7 @@ def return_relevant_potentials(structure_oxid: mg.Structure, **kwargs):
 
     # if there is oxygen, find the corresponding potential
     try:
-        oxygen_max = max_potentials[mg.Element("O")]
+        oxygen_max = max_potentials[mg.core.Element("O")]
     except KeyError:
         oxygen_max = None
 
@@ -680,12 +1011,12 @@ def return_relevant_potentials(structure_oxid: mg.Structure, **kwargs):
 
 
 # %% lookup ionization energy
-def get_elem_oxi_state(structure_oxid: mg.Structure):
+def get_elem_oxi_state(structure_oxid: mg.core.Structure):
     species = structure_oxid.composition.elements
     return {specie.element.symbol: specie.oxi_state for specie in species}
 
 
-def get_relevant_elems(structure_oxid: mg.Structure):
+def get_relevant_elems(structure_oxid: mg.core.Structure):
     """
     Find the relevant elements and their oxidation states to look up their ionization energy
     (non-workable for structures than only contain non_metals or metals)
@@ -736,7 +1067,7 @@ def lookup_ionization_energy_helper(relevant_metal: str, relevant_metal_oxi_stat
     return iv, iv_p1
 
 
-def lookup_ionization_energy(structure_oxid: mg.Structure):
+def lookup_ionization_energy(structure_oxid: mg.core.Structure):
     """
     Find the vth and (v+1)th ionization energy for the metal species,
     and the electron affinity for the non_metal_species
@@ -830,7 +1161,6 @@ def handbuilt_featurizer_helper(structure_oxid):
     :return: Pandas Series
     """
     struct_ordered, struct_disordered = (1, 0) if structure_oxid.is_ordered else (0, 1)
-
     mm_dists_calculator = try_decorator(return_relevant_mm_dists, 3, True)
     max_mm_dists, min_mm_dists, avg_mm_dists = mm_dists_calculator(structure_oxid)
 
@@ -843,14 +1173,14 @@ def handbuilt_featurizer_helper(structure_oxid):
     site_potential_calculator = try_decorator(return_relevant_potentials, 2, False)
     v_m, v_x = site_potential_calculator(structure_oxid)
 
-    ionization_energy_calculator = try_decorator(lookup_ionization_energy, 3, False)
-    iv_m, iv_p1_m, non_metal_elec_affinity = ionization_energy_calculator(structure_oxid)
+#     ionization_energy_calculator = try_decorator(lookup_ionization_energy, 3, False)
+#     iv_m, iv_p1_m, non_metal_elec_affinity = ionization_energy_calculator(structure_oxid)
 
-    hubbard_u_calculator = try_decorator(calc_hubbard_u, 1, False)
-    est_hubbard_u = hubbard_u_calculator(iv_m, iv_p1_m, avg_mm_dists)
+#     hubbard_u_calculator = try_decorator(calc_hubbard_u, 1, False)
+#     est_hubbard_u = hubbard_u_calculator(iv_m, iv_p1_m, avg_mm_dists)
 
-    charge_trans_calculator = try_decorator(calc_charge_trans, 1, False)
-    est_charge_trans = charge_trans_calculator(v_m, v_x, iv_m, non_metal_elec_affinity, avg_mx_dists)
+#     charge_trans_calculator = try_decorator(calc_charge_trans, 1, False)
+#     est_charge_trans = charge_trans_calculator(v_m, v_x, iv_m, non_metal_elec_affinity, avg_mx_dists)
 
     volume_per_site = structure_oxid.volume / structure_oxid.num_sites
 
@@ -859,8 +1189,8 @@ def handbuilt_featurizer_helper(structure_oxid):
                       "max_mx_dists": max_mx_dists, "min_mx_dists": min_mx_dists, "avg_mx_dists": avg_mx_dists,
                       "max_xx_dists": max_xx_dists, "min_xx_dists": min_xx_dists, "avg_xx_dists": avg_xx_dists,
                       "v_m": v_m, "v_x": v_x,
-                      "iv": iv_m, "iv_p1": iv_p1_m,
-                      "est_hubbard_u": est_hubbard_u, "est_charge_trans": est_charge_trans,
+#                       "iv": iv_m, "iv_p1": iv_p1_m,
+#                       "est_hubbard_u": est_hubbard_u, "est_charge_trans": est_charge_trans,
                       "volume_per_site": volume_per_site})
 
 
