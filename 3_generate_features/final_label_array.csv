@@ -778,7 +778,6 @@ Co2Si
 Cotunnite#PbCl2
 Laves(2H)#MgZn2
 Laves(2H)#MgZn2
-Laves(2H)#MgZn2
 Cervantite#Sb2O4
 GeS2(HT)
 Cristobalite#SiO2
@@ -2921,7 +2920,6 @@ Fluorite#CaF2
 Rutile#TiO2
 Rutile#TiO2
 Brookite#TiO2
-Fluorite#CaF2
 Mg2RuHx-frame
 BeCl2
 MoO2#VO2
@@ -3245,7 +3243,6 @@ OsGe2
 Co2Si
 Laves(cub)#MgCu2
 ZrGa2
-Laves(cub)#MgCu2
 Co2Si
 Pyrite#FeS2(cP12)
 Quartz(high)#SiO2
@@ -4008,7 +4005,6 @@ MoS2(4H)
 MgCu2(filled)-frame
 Fluorite#CaF2
 SmNiSb
-Fluorite#CaF2
 Baddeleyite#ZrO2(mP12)
 Quartz(low)#SiO2
 Laves(2H)#MgZn2
@@ -4043,7 +4039,6 @@ CdI2(hP3)
 SmSb2
 CeCu2
 CdI2(hP3)
-Fluorite#CaF2
 CaC2-IV(Fm-3m)#KCN
 BaSi2(oP24)
 Laves(cub)#MgCu2
@@ -4561,7 +4556,6 @@ Laves(2H)#MgZn2
 Pyrite#FeS2(cP12)
 FeAsS#CoSb2
 Quartz(low)#SiO2
-Fluorite#CaF2
 Ga(GaCl4)
 AlB2
 CeCu2
@@ -5681,7 +5675,6 @@ Laves(2H)#MgZn2
 CuAl2
 Ni2In#Co1.75Ge
 Quartz(low)#SiO2
-Fluorite#CaF2
 Laves(cub)#MgCu2
 Laves(cub)#MgCu2
 CeCu2
@@ -5927,7 +5920,6 @@ CdI2(hP60)
 Laves(cub)#MgCu2
 Sr2IrH5+x
 Laves(cub)#MgCu2
-Fluorite#CaF2
 WB2
 Quartz(low)#SiO2
 Quartz(low)#SiO2
@@ -6497,7 +6489,6 @@ hcp(filled)#Nb2N
 CdCl2(3R)
 Laves(cub)#MgCu2
 Ba(OH)2
-Fluorite#CaF2
 Quartz(low)#SiO2
 Pyrite#FeS2(cP12)
 FeAsS#CoSb2
@@ -6965,7 +6956,6 @@ CaC2-I(I4/mmm)
 Fluorite#CaF2
 Laves(cub)#MgCu2
 Cervantite#Sb2O4
-Fluorite#CaF2
 Laves(cub)#MgCu2
 NdMn2Hx(C2/m11)
 Laves(cub)#MgCu2
