@@ -1,0 +1,10 @@
+,Name,Importances
+8,e1_Column/e2_Row,0.19117988591232557
+7,(e1_Column+e2_Row)/e1_Column,0.1850438754004458
+6,e2_NpValence/e2_NUnfilled,0.15410396035840176
+5,(e2_NpValence+e2_NUnfilled)/e2_NpValence,0.14504582423569773
+4,(e1_MeltingT+e2_MeltingT)/e1_MeltingT,0.08476908835569585
+3,(e1_CovalentRadius+e2_CovalentRadius)/e1_CovalentRadius,0.08320129539613788
+2,(e1_NsValence+e2_NpValence)/e1_NsValence,0.05876418208588367
+1,e1_NsValence/e2_NpValence,0.049804947127585555
+0,(e1_Row+e2_Column)/e1_Row,0.04808694112782612
