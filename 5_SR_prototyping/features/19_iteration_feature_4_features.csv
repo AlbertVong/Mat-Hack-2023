@@ -1,5 +1,5 @@
 ,Name,Importances
-3,(e1-e2)/e1_NpValence.25,0.32416463555196834
-2,(e1+e2)/e1_Column.2,0.23140251708525356
-1,(e1-e2)/e1_Column.2,0.22695751701399666
-0,(e1-e2)/e2_Column.2,0.21747533034878136
+3,e1_Column/e2_Row,0.300930547435421
+2,(e1_Column+e2_Row)/e1_Column,0.2913968638788089
+1,(e2_NpValence+e2_NUnfilled)/e2_NUnfilled,0.21340511585914118
+0,(e2_NpValence+e2_NUnfilled)/e2_NpValence,0.19426747282662885
