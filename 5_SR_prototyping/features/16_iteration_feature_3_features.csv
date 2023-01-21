@@ -1,0 +1,4 @@
+,Name,Importances
+2,e1_CovalentRadius/e2_CovalentRadius,0.33748996072706083
+1,(e1_CovalentRadius+e2_CovalentRadius)/e1_CovalentRadius,0.3326964867352843
+0,(e1_Column+e2_Column)/e1_Column,0.3298135525376549
