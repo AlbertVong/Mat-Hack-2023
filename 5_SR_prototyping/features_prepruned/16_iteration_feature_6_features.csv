@@ -1,7 +1,0 @@
-,Name,Importances
-5,e2_NpValence/e2_NUnfilled,0.20513048924920452
-4,(e2_NpValence-e2_NUnfilled)/e2_NpValence,0.2019785048846275
-3,(e1_MeltingT+e2_MeltingT)/e1_MeltingT,0.18644891971640196
-2,(e1_Column-e2_Row)/e1_Column,0.1370077396555233
-1,e1_Column/e2_Row,0.1367805046237975
-0,(e1_Column+e2_Row)/e1_Column,0.13265384187044518
