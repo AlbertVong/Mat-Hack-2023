@@ -1,0 +1,14 @@
+,Name,Importances
+12,e1_CovalentRadius/e2_CovalentRadius,0.15428150753320619
+11,(e1_CovalentRadius+e2_CovalentRadius)/e1_CovalentRadius,0.1441856318688682
+10,e1_Column/e2_Column,0.08319283726296631
+9,(e1_Column+e2_Column)/e1_Column,0.07907162067837745
+8,e1_Electronegativity/e2_Electronegativity,0.07598305413212633
+7,(e2_NdValence+e2_NpUnfilled)/e2_NdValence,0.07568018134506223
+6,(e2_NValence+e2_NpUnfilled)/e2_NValence,0.07469830435266782
+5,(e1_Electronegativity+e2_Electronegativity)/e1_Electronegativity,0.06811273647613296
+4,max_ionic_char,0.05509808877414536
+3,e1_NfValence/e2_NUnfilled,0.048317263087156455
+2,(e1_NfValence+e2_NUnfilled)/e1_NfValence,0.04755514944949585
+1,(e1_NsValence+e2_NdValence)/e1_NsValence,0.0475536875918069
+0,e1_NsValence/e2_NdValence,0.046269937447988005
