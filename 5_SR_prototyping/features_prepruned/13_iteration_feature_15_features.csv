@@ -1,0 +1,16 @@
+,Name,Importances
+14,e1_Column/e2_Row,0.13647094509315344
+13,(e1_Column-e2_Row)/e1_Column,0.12561275753172765
+12,(e1_Column+e2_Row)/e1_Column,0.1190667126187029
+11,(e2_NpValence-e2_NUnfilled)/e2_NpValence,0.0935141432409409
+10,(e2_NpValence+e2_NUnfilled)/e2_NpValence,0.08449542148910635
+9,e2_NpValence/e2_NUnfilled,0.08386033312882321
+8,(e2_NValence+e2_NdUnfilled)/e2_NValence,0.04246006842256034
+7,(e1_MeltingT+e2_MeltingT)/e1_MeltingT,0.041957098058933676
+6,(e1_NsValence+e2_NpValence)/e1_NsValence,0.041099710502921986
+5,(e1_CovalentRadius+e2_CovalentRadius)/e1_CovalentRadius,0.040421312070949636
+4,(e1_MeltingT-e2_MeltingT)/e1_MeltingT,0.040386413860375135
+3,e1_CovalentRadius/e2_CovalentRadius,0.0395169585261527
+2,(e1_CovalentRadius-e2_CovalentRadius)/e1_CovalentRadius,0.037595758268504545
+1,(e1_Electronegativity-e2_Electronegativity)/e1_Electronegativity,0.03752298923402932
+0,(e1_NsValence-e2_NpValence)/e1_NsValence,0.0360193779531183
