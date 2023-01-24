@@ -1,1 +1,0 @@
-add(-1.774, e1_CovalentRadius/e2_CovalentRadius)

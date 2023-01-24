@@ -1,0 +1,1 @@
+div(sub(max(e1_CovalentRadius/e2_CovalentRadius, (e1_CovalentRadius+e2_CovalentRadius)/e1_CovalentRadius), (e1_Column+e2_Column)/e1_Column), (e1_Column+e2_Column)/e1_Column)

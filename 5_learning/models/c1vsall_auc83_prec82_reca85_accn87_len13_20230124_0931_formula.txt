@@ -1,0 +1,1 @@
+max(add(sub(sub(e1_CovalentRadius/e2_CovalentRadius, (e1_Column+e2_Column)/e1_Column), (e1_Column+e2_Column)/e1_Column), 2.223), sub(sub(e1_CovalentRadius/e2_CovalentRadius, (e1_CovalentRadius+e2_CovalentRadius)/e1_CovalentRadius), (e1_CovalentRadius+e2_CovalentRadius)/e1_CovalentRadius))
