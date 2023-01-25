@@ -1,0 +1,1 @@
+min(add(e2_NdUnfilled/e2_NUnfilled, add(e2_NdUnfilled/e2_NUnfilled, (e1_NsUnfilled-e2_NpValence)/e1_NsUnfilled)), (e2_NdUnfilled-e2_NfUnfilled)/e2_NdUnfilled)

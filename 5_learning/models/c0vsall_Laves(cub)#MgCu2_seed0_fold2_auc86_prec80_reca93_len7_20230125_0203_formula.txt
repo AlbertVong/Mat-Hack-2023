@@ -1,0 +1,1 @@
+add(sub((e1_NfUnfilled-e2_NpValence)/e1_NfUnfilled, (e1_Electronegativity-e2_Electronegativity)/e1_Electronegativity), add((e1_NfValence-e1_NpUnfilled)/e1_NfValence, (e1_NsUnfilled-e2_NpValence)/e1_NsUnfilled))

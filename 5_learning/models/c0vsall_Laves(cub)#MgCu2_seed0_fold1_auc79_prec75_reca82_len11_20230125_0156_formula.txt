@@ -1,0 +1,1 @@
+add(max(sub((e1_NfValence+e2_NsUnfilled)/e1_NfValence, e1_Column/e2_Row), sub((e1_NsUnfilled-e2_NdValence)/e1_NsUnfilled, (e1_NfValence-e1_NsUnfilled)/e1_NfValence)), add((e1_NfValence-e2_NsUnfilled)/e1_NfValence, (e1_NsUnfilled-e2_NpValence)/e1_NsUnfilled))

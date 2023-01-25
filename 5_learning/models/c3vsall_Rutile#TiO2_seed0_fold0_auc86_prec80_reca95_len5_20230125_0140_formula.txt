@@ -1,0 +1,1 @@
+min(div((e2_NdValence+e2_NValence)/e2_NdValence, (e2_NsValence-e2_NUnfilled)/e2_NsValence), (e2_NpValence-e2_NdValence)/e2_NpValence)
