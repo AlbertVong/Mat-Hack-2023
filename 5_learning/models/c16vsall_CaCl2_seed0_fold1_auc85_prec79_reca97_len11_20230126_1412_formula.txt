@@ -1,0 +1,1 @@
+min(div(sub(sub(add(e1_MeltingT/e2_MeltingT, -3.194), e1_NUnfilled/e2_NpValence), e1_NUnfilled/e2_NpValence), e1_NdValence/e1_NUnfilled), e1_NdValence/e1_NUnfilled)

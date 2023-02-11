@@ -1,0 +1,1 @@
+mul(mul(e1_CovalentRadius/e2_CovalentRadius, e1_GSvolume_pa/e2_GSvolume_pa), sub(sub(sub((e1_NfUnfilled+e2_NpValence)/e1_NfUnfilled, e1_CovalentRadius/e2_CovalentRadius), mul(e1_CovalentRadius/e2_CovalentRadius, e1_GSvolume_pa/e2_GSvolume_pa)), e1_CovalentRadius/e2_CovalentRadius))

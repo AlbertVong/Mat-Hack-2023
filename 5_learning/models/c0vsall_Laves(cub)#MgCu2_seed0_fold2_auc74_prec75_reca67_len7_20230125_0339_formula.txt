@@ -1,0 +1,1 @@
+min(e1_Column/e2_Row, min(e1_Column/e2_Row, mul(-3.305, (e1_Column-e2_Row)/e1_Column)))

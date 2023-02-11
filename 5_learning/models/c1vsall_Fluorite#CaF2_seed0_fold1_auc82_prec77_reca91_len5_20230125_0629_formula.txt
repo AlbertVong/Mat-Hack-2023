@@ -1,0 +1,1 @@
+mul(add(-2.253, e1_CovalentRadius/e2_CovalentRadius), (e1_CovalentRadius-e2_CovalentRadius)/e1_CovalentRadius)

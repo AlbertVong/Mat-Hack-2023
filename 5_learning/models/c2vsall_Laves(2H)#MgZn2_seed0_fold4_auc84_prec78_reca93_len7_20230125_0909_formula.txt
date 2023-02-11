@@ -1,0 +1,1 @@
+add((e1_CovalentRadius-e2_CovalentRadius)/e1_CovalentRadius, add((e1_CovalentRadius-e2_CovalentRadius)/e1_CovalentRadius, max(-2.247, (e2_NdUnfilled-e2_NUnfilled)/e2_NdUnfilled)))

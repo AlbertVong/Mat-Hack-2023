@@ -1,0 +1,1 @@
+add(mul((e1_Column-e2_Row)/e1_Column, (e2_NpValence-e2_NUnfilled)/e2_NpValence), (e1_NsUnfilled-e2_NpValence)/e1_NsUnfilled)

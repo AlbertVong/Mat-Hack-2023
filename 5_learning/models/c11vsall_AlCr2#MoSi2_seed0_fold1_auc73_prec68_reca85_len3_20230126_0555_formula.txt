@@ -1,0 +1,1 @@
+mul((e2_NdValence-e2_NpUnfilled)/e2_NdValence, (e1_GSvolume_pa-e2_GSvolume_pa)/e1_GSvolume_pa)

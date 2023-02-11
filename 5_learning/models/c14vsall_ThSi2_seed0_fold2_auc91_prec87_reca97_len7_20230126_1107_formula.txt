@@ -1,0 +1,1 @@
+sub(div(-3.583, (e2_NsValence+e2_NpUnfilled)/e2_NsValence), add(e1_MeltingT/e2_MeltingT, (e1_NsUnfilled-e2_NpUnfilled)/e1_NsUnfilled))

@@ -1,0 +1,1 @@
+sub(mul((e1_GSvolume_pa-e2_GSvolume_pa)/e1_GSvolume_pa, -1.749), e1_NUnfilled/e2_NpValence)

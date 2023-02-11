@@ -1,0 +1,1 @@
+sub(e1_NpUnfilled/e2_NpValence, (e1_Column+e2_Column)/e1_Column)

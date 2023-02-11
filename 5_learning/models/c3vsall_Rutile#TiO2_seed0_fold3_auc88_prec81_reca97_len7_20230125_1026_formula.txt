@@ -1,0 +1,1 @@
+min((e2_Column+e2_Row)/e2_Column, min((e2_Column+e2_Row)/e2_Column, add(e1_MeltingT/e2_MeltingT, -6.350)))

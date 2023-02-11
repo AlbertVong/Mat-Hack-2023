@@ -1,0 +1,1 @@
+add(max((e2_NdUnfilled-e2_NUnfilled)/e2_NdUnfilled, -2.186), div(add(max((e2_NdUnfilled-e2_NUnfilled)/e2_NdUnfilled, -2.186), div((e1_CovalentRadius-e2_CovalentRadius)/e1_CovalentRadius, (e2_NValence-e2_NdUnfilled)/e2_NValence)), (e2_NValence-e2_NdUnfilled)/e2_NValence))

@@ -1,0 +1,1 @@
+add(sub(sub((e2_NpValence+e2_NpUnfilled)/e2_NpValence, (e2_NsValence-e2_NpUnfilled)/e2_NsValence), (e2_NsValence-e2_NpUnfilled)/e2_NsValence), -3.717)

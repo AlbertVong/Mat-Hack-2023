@@ -1,0 +1,1 @@
+div(sub(e1_CovalentRadius/e2_CovalentRadius, (e1_Electronegativity+e2_Electronegativity)/e1_Electronegativity), (e2_NdValence-e2_NpUnfilled)/e2_NdValence)

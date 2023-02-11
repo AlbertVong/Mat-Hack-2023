@@ -1,0 +1,1 @@
+sub(sub(div((e1_NdValence-e2_NdUnfilled)/e1_NdValence, mul(-0.279, (e1_NdValence+e2_NdUnfilled)/e1_NdValence)), e1_NpUnfilled/e2_NdUnfilled), e1_NpUnfilled/e2_NdUnfilled)

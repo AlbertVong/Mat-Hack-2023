@@ -1,0 +1,1 @@
+sub(min(sub((e2_NpValence+e2_NUnfilled)/e2_NpValence, (e1_Column+e2_Row)/e1_Column), (e1_Column+e2_Row)/e1_Column), e1_Column/e2_Row)
